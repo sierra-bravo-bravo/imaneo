@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imaneo</title>
+    <meta name="description" content="Some inspiration for text animations on scroll.">
+    <meta name="keywords" content="typography, animation, on-scroll, gsap, ScrollTrigger">
+    <meta name="author" content="Codrops">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
+    <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+</head>
+
+<body class="demo-2 antialiased loading">
+    <main class="transition-container">
+
+        <nav class="text-sm fixed w-full navbar-bg">
+            <div class="p-5 w-full">
+                <div class="flex w-full">
+                    <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
+                        <div class="text-fade">
+                            <!-- Website Logo -->
+                            <a href="/index.html" class="navlink flex items-center">
+                                <img src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex space-x-4">
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/carte.html" class="navlink">Carte</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="#" class="navlink">Vers le site archives ↗</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                            Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <div class="vh-full-mobile p-5 flex flex-col space-y-5">
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/batiments.html">Bâtiments</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/carte.html">Carte</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/films-thema.html">Films Thématiques</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/a-propos.html">À Propos</a>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="p-5 grid grid-cols-12 sm:gap-5 gap-5 vh-full-desktop" data-fade-in-text="">
+            <div class="col-span-12 lg:col-span-8 flex flex-col justify-between space-y-5 md:space-y-0">
+                <div class="h-10 md:h-5"></div>
+                <div class="text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl flex flex-col uppercase">
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            Gare
+                        </div>
+                    </div>
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            ferroviaire
+                        </div>
+                    </div>
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            de Tolède
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-8 sm:gap-5 md:gap-5">
+                    <div class="col-span-8 md:col-span-6 lg:col-span-5">
+                        <div class="shape w-5 h-5 mb-3">
+                            <div class="text-fade">
+                                <img src="/Property%201=4.15ebe4bd.svg">
+                            </div>
+                        </div>
+                        <p class="text-base md:text-xl content__title text-fade">
+                            Construite après la Première Guerre mondiale pour accueillir le flux toujours plus important
+                            des visiteurs de l’ancienne capitale de la Castille puis lieu de résidence du célèbre
+                            peintre El-Greco, la gare de Tolède est un bel exemple d’architecture ferroviaire à la fois
+                            historiciste et régionaliste. Son architecte adopte un style néo-mudéjar inspiré de célèbres
+                            édifices tolédans du XVe siècle .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end container_big_img item-img">
+                <img class="w-full content__title text-fade" src="/04_bat-featured_gare-tolede.c17fedcf.jpg" alt="image principale du batiment">
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+                <div class="col-span-12 grid grid-cols-12 gap-5">
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span class="lol">Tolède, Espagne</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span class="lol">1919</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span class="lol">Narciso Clavería y de Palacios
+                            (1869-1935)
+                        </span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Artisans
+                            et décorateurs</span><span class="lol">Antonio Dorado (s.d.) ; Eduardo Rivero (s.d.) ;
+                            Cristino Soravilla y Rózpide (1900-1968) ; Ángel Pedraza Moriz (1889-1961) ; Julio Pascual
+                            Martínez (1879-1967) ; Jaime García Gamero (m. 1939)
+                        </span></div>
+                </div>
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-12 lg:col-span-4 flex flex-col overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_tolede1.ad1029c3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_tolede2.18025392.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_tolede3.2e9745a1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 mt-10">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="lg:col-start-2 col-span-12 lg:col-span-3 flex flex-col gap-5 lg:gap-1 lg:py-5">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_tolede4.db9fc0f6.jpg" alt="">
+                    </div>
+                    <div class="lg:w-3/4 lg:transform lg:translate-x-3/4 lg:-translate-y-6" data-scale-up="">
+                        <img class="item-img" src="/3-4_tolede6.ed2a7daa.jpg" alt="">
+                    </div>
+                </div>
+                <div class="lg:col-start-8 col-span-12 lg:col-span-4 flex flex-col lg:py-5">
+                    <div class="w-full lg:mt-10" data-scroll-up="">
+                        <img class="item-img" src="/3-4_tolede5.9168b734.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <div class="w-full">
+                <div class="overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/16-9_tolede.ca7d35fa.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col py-10">
+                    <div style="padding: 56.25% 0 0; position: relative"><iframe src="https://player.vimeo.com/video/844875243?h=b46dd1d70a&byline=0&portrait=0" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <div class="content__title mt-5" data-splitting="" data-effect16="">
+                        <p class="text-2xl md:text-4xl">
+                            Des habitants, des usagers, des historiens locaux nous font partager leur admiration pour ce
+                            symbole de l’architecture néo-mudéjar tolédane et des savoir-faire des artisans castillans.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-12 lg:col-span-4 flex flex-col overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_tolede7.2a24ba01.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-span-12 lg:col-start-9 lg:col-span-4 flex flex-col overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_tolede8.c2d4e17b.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="-pb-10 bg-grey-50 mb-10">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="col-start-3 lg:col-start-4 col-span-8 lg:col-span-6 transform translate-y-10" data-fade-in-text="">
+                    <div class="text-fade">
+                        <img class="item-img" src="/5-4-tolede1.607c204e.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 mt-10">
+            <div class="w-full pt-10">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Histoire</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="px-5 md:pt-10 pb-5 w-full">
+            <div class="grid grid-cols-12 gap-5" data-lines="" data-fade-in-text="">
+                <div class="w-150vw uppercase flex gap-5" data-marquee-l="">
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0004_B_0069_004_001-02-scaled.8c85ed27.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0007_9-MZAMadridToledo.842fb49e.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0000_B_0069_004_001-01-scaled.a7b04c19.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0001_B_0069_004_012-01.c26ce446.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0004_B_0069_004_001-02-scaled.8c85ed27.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="lg:col-start-3 xl:col-start-4 col-span-12 lg:col-span-8 xl:col-span-6 flex flex-col py-10 overflow-hidden" data-fade-in-text="">
+                    <div class="content__title" data-splitting="" data-effect16="">
+                        <p class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-center">
+                            «Cuando el arquitecto actúa con demasiada independencia, se realizan obras como la estación
+                            de Toledo… cuando sólo actúa el ingeniero olvida, con lamentable frecuencia, el efecto
+                            artístico»
+                        </p>
+                    </div>
+                    <p class="mt-5 lg:mt-7 text-fade text-center">
+                        (Vicente Machimbarrena Gogorza, «Arquitectura e ingeniería», Revista de Obras Públicas, 1924)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-5 pb-10">
+            <div class="grid grid-cols-12 gap-5" data-lines="" data-fade-in-text="">
+                <div class="w-150vw uppercase text-9xl flex gap-5" data-marquee-r="">
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0002_B_0069_004_013-01.ef80c355.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0006_Image3.096c50be.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0003_B_0069_004_014-01-scaled.1239efbc.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0005_1_C_0945_001_001_plano-2500x1307.b5e78173.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0002_B_0069_004_013-01.ef80c355.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-5">
+            <div class="w-full">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Bâtiment suivant</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-5 px-5" data-lines="">
+            <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+        </div>
+
+
+        <div class="bat-list p-5" data-fade-in-text="">
+            <a href="/05-gare-tozeur.html">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-12 grid grid-cols-12 gap-5 py-5">
+                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-fade">
+                            <h2>
+                                Gare ferroviaire de Tozeur
+                            </h2>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Lieu</span>
+                            <span class="lol">Tozeur, Tunisie</span>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Construction</span>
+                            <span class="lol">1910-1912</span>
+                        </div>
+                        <div class="hidden md:flex arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
+                            <span>→</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt-10 bg-yellow text-dark px-5 py-2 mb-1">
+            <div class="grid grid-cols-12" data-lines="">
+                <div class="col-span-12 flex flex-col lg:flex-row gap-2" data-fade-in-text="">
+                    <div class="">
+                        <a class="text-dark hover:text-grey-500" href="/mentions-legales.html">Mentions Légales</a>
+                    </div>
+                    <div class="">
+                        <a class="text-dark hover:text-grey-500" href="/credits.html">Crédits</a>
+                    </div>
+                    <div class="">
+                        <p>Accessibilité : partiellement conforme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar"></div>
+
+    </main>
+    <script src="/index.70862351.js" defer=""></script>
+</body>
+
+</html>

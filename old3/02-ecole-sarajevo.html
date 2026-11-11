@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imaneo</title>
+    <meta name="description" content="Some inspiration for text animations on scroll.">
+    <meta name="keywords" content="typography, animation, on-scroll, gsap, ScrollTrigger">
+    <meta name="author" content="Codrops">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
+    <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+</head>
+
+<body class="demo-2 antialiased loading">
+    <main class="transition-container">
+
+        <nav class="text-sm fixed w-full navbar-bg">
+            <div class="p-5 w-full">
+                <div class="flex w-full">
+                    <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
+                        <div class="text-fade">
+                            <!-- Website Logo -->
+                            <a href="/index.html" class="navlink flex items-center">
+                                <img src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex space-x-4">
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/carte.html" class="navlink">Carte</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="#" class="navlink">Vers le site archives ↗</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                            Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <div class="vh-full-mobile p-5 flex flex-col space-y-5">
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/batiments.html">Bâtiments</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/carte.html">Carte</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/films-thema.html">Films Thématiques</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/a-propos.html">À Propos</a>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="p-5 grid grid-cols-12 sm:gap-5 gap-5 vh-full-desktop" data-fade-in-text="">
+            <div class="col-span-12 lg:col-span-8 flex flex-col justify-between space-y-5 md:space-y-0">
+                <div class="h-10 md:h-5"></div>
+                <div class="text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl flex flex-col uppercase">
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            École de droit
+                        </div>
+                    </div>
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            de Sarajero
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-8 sm:gap-5 md:gap-5">
+                    <div class="col-span-8 md:col-span-6 lg:col-span-5">
+                        <div class="shape w-5 h-5 mb-3">
+                            <div class="text-fade">
+                                <img src="/Property%201=2.ca4f451c.svg">
+                            </div>
+                        </div>
+                        <p class="text-base md:text-xl content__title text-fade">
+                            L’école de droit chariatique est un des premiers édifices construits à Sarajevo par les
+                            Austro-hongrois pour promouvoir un courant réformiste dans l’enseignement du droit
+                            islamique. Restaurée dans les années 2000, elle abrite aujourd’hui la bibliothèque et les
+                            bureaux des enseignants de la faculté d’étude islamique de Sarajevo.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end container_big_img item-img">
+                <img class="w-full content__title text-fade" src="/02_bat-featured_ecole-chariatique-sarajevo.943b5e07.jpg" alt="image principale du batiment">
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+                <div class="col-span-12 grid grid-cols-12 gap-5">
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span class="lol">Sarajevo, Bosnie-Herzégovine</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span class="lol">1887</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span class="lol">Karel Pařik
+                            (1857-1942)</span></div>
+                </div>
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="p-5 mt-10">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="lg:col-start-2 col-span-12 lg:col-span-5 flex flex-col lg:py-5 overflow-hidden">
+                    <div class="w-full" data-scale-up="" data-mask-up="">
+                        <img class="item-img" src="/4-5_0001_DSCN3704.dcd7bbef.jpg" alt="">
+                    </div>
+                </div>
+                <div class="lg:col-start-8 col-span-12 lg:col-span-5 flex flex-col lg:py-5">
+                    <div class="w-full lg:mt-10" data-scroll-up="">
+                        <img class="item-img" src="/5-4_0002_DSCN3697.193cb55a.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-1 col-span-12 lg:col-span-6 flex flex-col py-5">
+                    <div class="content__title" data-splitting="" data-effect16="">
+                        <p class="text-2xl md:text-4xl">
+                            L’architecte du projet de restauration et la bibliothécaire de l’université nous font
+                            partager leur connaissance de cet édifice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="lg:col-start-2 col-span-12 lg:col-span-4 flex flex-col py-5">
+                    <div class="w-full lg:mt-10">
+                        <div class="content__title text-xl" data-fade-in-text="">
+                            <div class="">
+                                <div style="padding: 56.25% 0 0; position: relative"><iframe src="https://player.vimeo.com/video/842401482?h=d3076ec784&byline=0&portrait=0" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+                                <script src="https://player.vimeo.com/api/player.js"></script>
+                            </div>
+                            <div class="w-full mt-10" data-scale-down="">
+                                <img class="item-img" src="/5-4_0001_DSCN3690.693ea596.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-start-7 col-span-12 lg:col-span-5 flex flex-col py-5 overflow-hidden" data-fade-in-text="">
+                    <div class="w-4/5" data-scale-up="">
+                        <img class="item-img" src="/4-5_0000_DSCN3687.5a70381d.jpg" alt="">
+                    </div>
+                    <div class="mt-10">
+                        <div style="padding: 56.25% 0 0; position: relative"><iframe src="https://player.vimeo.com/video/842400562?h=f84020824e&byline=0&portrait=0" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-10">
+            <div class="w-full">
+                <div class="overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/16-9_01.a31c3b15.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="-pb-10 bg-dark-blue">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="col-start-3 lg:col-start-4 col-span-8 lg:col-span-6 transform translate-y-10" data-fade-in-text="">
+                    <div class="text-fade">
+                        <img class="item-img" src="/5-4_0000__SV11137.849e58e2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 mt-10">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="lg:col-start-2 col-span-12 lg:col-span-2 flex flex-col lg:py-10 overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_0000_DSCN3683.e9f7c014.jpg" alt="">
+                    </div>
+                </div>
+                <div class="lg:col-start-6 col-span-12 lg:col-span-2 flex flex-col lg:py-10">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_0002_DSCN3679.3ffd3d27.jpg" alt="">
+                    </div>
+                </div>
+                <div class="lg:col-start-10 col-span-12 lg:col-span-2 flex flex-col lg:py-10">
+                    <div class="w-full">
+                        <img class="item-img" src="/3-4_0001_DSCN3688.e30c27bc.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-5">
+            <div class="w-full">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Histoire</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="px-5 py-10 w-full">
+            <div class="grid grid-cols-12 gap-5" data-lines="" data-fade-in-text="">
+                <div class="w-150vw uppercase flex gap-5" data-marquee-l="">
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0000_ss.095e8b98.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0001_IMG_3215+.1e1ada4b.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0005_fortepan_76317.61ba445c.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0006_Charia%20school_1.95ebd291.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_0003_IMG_3206+.f3e1993b.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-10"></div>
+
+        <div class="p-5">
+            <div class="w-full">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Bâtiment suivant</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-5 px-5" data-lines="">
+            <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+        </div>
+
+
+        <div class="bat-list p-5" data-fade-in-text="">
+            <a href="/03-gare-oran.html">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-12 grid grid-cols-12 gap-5 py-5">
+                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-fade">
+                            <h2>
+                                Gare d'Oran
+                            </h2>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Lieu</span>
+                            <span class="lol">Oran, Algérie</span>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Inauguration</span>
+                            <span class="lol">1910</span>
+                        </div>
+                        <div class="hidden md:flex arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
+                            <span>→</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt-10 bg-yellow text-dark px-5 py-2 mb-1">
+            <div class="grid grid-cols-12" data-lines="">
+                <div class="col-span-12 flex flex-col lg:flex-row gap-2" data-fade-in-text="">
+                    <div class="">
+                        <a class="text-dark hover:text-grey-500" href="/mentions-legales.html">Mentions Légales</a>
+                    </div>
+                    <div class="">
+                        <a class="text-dark hover:text-grey-500" href="/credits.html">Crédits</a>
+                    </div>
+                    <div class="">
+                        <p>Accessibilité : partiellement conforme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar"></div>
+
+    </main>
+    <script src="/index.70862351.js" defer=""></script>
+</body>
+
+</html>

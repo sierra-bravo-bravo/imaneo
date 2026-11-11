@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imaneo</title>
+    <meta name="description" content="Some inspiration for text animations on scroll.">
+    <meta name="keywords" content="typography, animation, on-scroll, gsap, ScrollTrigger">
+    <meta name="author" content="Codrops">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
+    <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+    <!-- <script src="//tympanus.net/codrops/adpacks/analytics.js"></script> -->
+</head>
+
+<body class="demo-2 loading antialiased">
+    <main class="transition-container">
+        <!-- <div class="p-5 grid grid-cols-12 gap-5 vh-full fixed w-full">
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+        </div> -->
+
+        <nav class="text-sm fixed w-full navbar-bg">
+            <div class="p-5 w-full">
+                <div class="flex w-full">
+                    <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
+                        <div class="text-fade">
+                            <!-- Website Logo -->
+                            <a href="/index.html" class="navlink flex items-center">
+                                <img src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex space-x-4">
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/carte.html" class="navlink">Carte</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                            Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <div class="vh-full-mobile p-5 flex flex-col space-y-5">
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/batiments.html">Bâtiments</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/carte.html">Carte</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/films-thema.html">Films Thématiques</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/a-propos.html">À Propos</a>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="p-5 grid grid-cols-12 gap-5 vh-full-desktop" data-lines="">
+            <div class="col-span-12 flex flex-col space-y-10">
+                <div class="h-5"></div>
+                <div class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col uppercase items-center">
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            Films
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            thématiques
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 flex flex-col w-full items-center" data-fade-in-text="">
+                <div class="flex py-2 space-x-2 text-fade">
+                    <span class="opacity-50">01</span>
+                    <span class="lol">Néo-mauresques au Maghreb</span>
+                </div>
+                <div class="flex py-2 space-x-2 text-fade">
+                    <span class="opacity-50">02</span>
+                    <span class="lol">Nationalisme & impérialisme</span>
+                </div>
+                <div class="flex py-2 space-x-2 text-fade">
+                    <span class="opacity-50">03</span>
+                    <span class="lol">Un style pour les synagogues</span>
+                </div>
+                <div class="flex py-2 space-x-2 text-fade">
+                    <span class="opacity-50">04</span>
+                    <span class="lol">Diffusion</span>
+                </div>
+                <div class="flex py-2 space-x-2 text-fade">
+                    <span class="opacity-50">05</span>
+                    <span class="lol">Sources</span>
+                </div>
+            </div>
+            <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+        </div>
+
+        <div class="py-10 px-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-3 col-span-8 flex flex-col gap-y-5">
+
+                    <div class="gap-5">
+                        <div class="text-5xl flex gap-5">
+                            <div class="">
+                                <div class="content__title">
+                                    <span class="opacity-50">01</span>
+                                    Néo-mauresques au Maghreb
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/844857921?h=b3124e56b7" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+
+                    <div class="col-span-3 flex flex-col py-5">
+                        <div class="overflow-hidden">
+                            <div class="opacity-50 content__title">Bâtiments associés
+                            </div>
+                        </div>
+                        <div class="flex gap-x-2 mt-2">
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 01
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <a href="/index.html">Bati</a>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 03
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="py-10 px-5 bg-white text-dark  ">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-3 col-span-8 flex flex-col gap-y-5">
+
+                    <div class="gap-5">
+                        <div class="text-5xl flex gap-5">
+                            <div class="">
+                                <div class="content__title">
+                                    <span class="opacity-50">02</span>
+                                    Nationalisme & impérialisme
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/844281563?h=c04642dde1" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+
+                    <div class="col-span-3 flex flex-col py-5">
+                        <div class="overflow-hidden">
+                            <div class="opacity-50 content__title">Bâtiments
+                                associés
+                            </div>
+                        </div>
+                        <div class="flex gap-x-2 mt-2">
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 01
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 02
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 03
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="py-10 px-5  ">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-3 col-span-8 flex flex-col gap-y-5">
+                    <div class="gap-5">
+                        <div class="text-5xl flex gap-5">
+                            <div class="">
+                                <div class="content__title">
+                                    <span class="opacity-50">03</span>
+                                    Un style pour les synagogues
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/844857921?h=b3124e56b7" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+
+                    <div class="col-span-3 flex flex-col py-5">
+                        <div class="overflow-hidden">
+                            <div class="opacity-50 content__title">Bâtiments associés
+                            </div>
+                        </div>
+                        <div class="flex gap-x-2 mt-2">
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 01
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <a href="/index.html">Bati</a>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 03
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="py-10 px-5 bg-white text-dark  ">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-3 col-span-8 flex flex-col gap-y-5">
+
+                    <div class="gap-5">
+                        <div class="text-5xl flex gap-5">
+                            <div class="">
+                                <div class="content__title">
+                                    <span class="opacity-50">04</span>
+                                    Diffusion
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/844281563?h=c04642dde1" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+
+                    <div class="col-span-3 flex flex-col py-5">
+                        <div class="overflow-hidden">
+                            <div class="opacity-50 content__title">Bâtiments
+                                associés
+                            </div>
+                        </div>
+                        <div class="flex gap-x-2 mt-2">
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 01
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 02
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 03
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10 px-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-3 col-span-8 flex flex-col gap-y-5">
+                    <div class="gap-5">
+                        <div class="text-5xl flex gap-5">
+                            <div class="">
+                                <div class="content__title">
+                                    <span class="opacity-50">05</span>
+                                    Sources
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/844857921?h=b3124e56b7" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+
+                    <div class="col-span-3 flex flex-col py-5">
+                        <div class="overflow-hidden">
+                            <div class="opacity-50 content__title">Bâtiments associés
+                            </div>
+                        </div>
+                        <div class="flex gap-x-2 mt-2">
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 01
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <a href="/index.html">Bati</a>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="">
+                                    <button class="menu-link oh unbutton">Bâtiments 03
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <script src="/index.70862351.js" defer=""></script>
+    <!-- <script type="module" src="js/demo1151408fb.js"></script> -->
+</body>
+
+</html>

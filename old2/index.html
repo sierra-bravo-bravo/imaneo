@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imaneo</title>
+    <meta name="description" content="Some inspiration for text animations on scroll.">
+    <meta name="keywords" content="typography, animation, on-scroll, gsap, ScrollTrigger">
+    <meta name="author" content="Codrops">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
+    <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+</head>
+
+<body class="demo-2 loading antialiased">
+    <main class="transition-container">
+        <!-- <div class="p-5 grid grid-cols-12 gap-5 vh-full fixed w-full">
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+        </div> -->
+
+        <nav class="text-sm fixed w-full navbar-bg">
+            <div class="p-5 w-full">
+                <div class="flex w-full">
+                    <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
+                        <div class="text-fade">
+                            <!-- Website Logo -->
+                            <a href="/index.html" class="navlink flex items-center">
+                                <img src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex space-x-4">
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/carte.html" class="navlink">Carte</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="#" class="navlink">Vers le site archives ↗</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                            Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <div class="vh-full-mobile p-5 flex flex-col space-y-5">
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/batiments.html">Bâtiments</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/carte.html">Carte</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/films-thema.html">Films Thématiques</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/a-propos.html">À Propos</a>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="p-5 grid grid-cols-12 gap-5 vh-full-desktop">
+
+            <div class="col-span-12 flex flex-col justify-between space-y-10" data-fade-in-text="">
+                <div class="h-5"></div>
+                <div class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col uppercase items-center">
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            Imaginaires
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            croisés de
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            l’architecture
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            néo-mauresque
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col md:flex-row p-4">
+                            <div class="flex space-x-1">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=1.788b6251.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=2.ca4f451c.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=3.b6aa1d23.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=4.15ebe4bd.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=5.6335986e.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=6.27a17aae.svg">
+                            </div>
+                            <div class="block md:hidden h-2"></div>
+                            <div class="flex space-x-1">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=7.3062a5b3.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=8.e31721a6.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=9.99e9d354.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=10.f90de751.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=11.da7c8607.svg">
+                                <img class="w-6 h-auto text-fade" src="/Property%201=12.dccbf4fa.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="scroll-anim flex flex-col space-y-6 items-center text-fade">
+                    <div class="scroll-ico"></div>
+                    <button href="#section-1" class="btn_scroll uppercase text-sm text-left tracking-widest">
+                        scrollez pour découvrir
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="px-5 md:pt-10 pb-5 w-full">
+            <div class="grid grid-cols-12 gap-5" data-lines="" data-fade-in-text="">
+                <div class="w-150vw uppercase flex gap-5" data-marquee-l="">
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_04.3462d0ea.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_02.3eeccb84.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_06.c5b91773.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_08.aadf4a47.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_04.3462d0ea.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-5 pb-10">
+            <div class="grid grid-cols-12 gap-5" data-lines="" data-fade-in-text="">
+                <div class="w-150vw uppercase text-9xl flex gap-5" data-marquee-r="">
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_05.bf840250.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_01.12c380c5.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_07.a85f4afa.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_03.6258c945.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/marquee-hp_01.12c380c5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-fade-in-text="">
+                <div class="col-start-1 col-span-12 md:col-start-3 md:col-span-8 flex flex-col py-5 lg:py-10">
+                    <div class="w-full">
+                        <div class="content__title flex flex-col">
+                            <span class="opacity-50 uppercase text-fade">Le projet imaneo</span>
+                            <div class="content__title" data-splitting="" data-effect16="">
+                                <p class="text-2xl md:text-4xl mt-5 lg:mt-10">
+                                    Au tournant des XIXe et XXe siècles, le courant orientaliste en architecture
+                                    connaît
+                                    un fort développement tant en Europe de l’Ouest, que dans les Balkans ou au sud
+                                    de
+                                    la Méditerranée. Quels en sont les principaux vecteurs, dans quels contextes
+                                    politiques et culturels ce courant a-t-il émergé ? Et aujourd’hui, un siècle
+                                    plus
+                                    tard, comment regarde-t-on ce type d’architecture selon que l’on est un
+                                    habitant, un
+                                    passant, un artiste, un historien, selon que l’on vit au nord, au sud ou à l’est
+                                    de
+                                    la Méditerranée ?
+                                </p>
+                                <p class="text-2xl md:text-4xl mt-5 lg:mt-10">
+                                    Le documentaire interactif Imanéo « Imaginaires croisés de l’architecture
+                                    néo-mauresque » vous propose de découvrir des édifices conçus dans ce style,
+                                    d’entendre les voix des gens qui les étudient, les regardent ou les habitent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-fade-in-text="">
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-es">
+                    <a href="/b_el-carpio.html" class="navlink">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-01">
+                            <div class="shape">
+                                <img src="/Property%201=1.788b6251.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Barrage et centrale hydroélectrique d’El Salto</span>
+                            <span class="opacity-50">El Carpio, Espagne</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-tu">
+                    <a href="/batiment.html" class="navlink">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-02">
+                            <div class="shape">
+                                <img src="/Property%201=2.ca4f451c.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">École de droit de Sarajevo</span>
+                            <span class="opacity-50">Sarajevo, Bosnie</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-al">
+                    <a href="/batiment.html" class="navlink">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-03">
+                            <div class="shape">
+                                <img src="/Property%201=3.b6aa1d23.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Gare d’Oran</span>
+                            <span class="opacity-50">Oran, Algérie</span>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-es">
+                    <a href="/batiment.html" class="navlink">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-04">
+                            <div class="shape">
+                                <img src="/Property%201=4.15ebe4bd.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Gare de Tolède</span>
+                            <span class="opacity-50">Tolède, Espagne</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-tu">
+                    <a href="/batiment.html" class="navlink">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-05">
+                            <div class="shape">
+                                <img src="/Property%201=5.6335986e.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Gare de Tozeur</span>
+                            <span class="opacity-50">Tozeur, Tunisie</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-fr">
+                    <a href="/batiment.html">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-06">
+                            <div class="shape">
+                                <img src="/Property%201=6.27a17aae.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Hôpital Avicenne de Bobigny</span>
+                            <span class="opacity-50">Bobiny, France</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-tu">
+                    <a href="/batiment.html">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-07">
+                            <div class="shape">
+                                <img src="/Property%201=7.3062a5b3.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Marché central de Tunis</span>
+                            <span class="opacity-50">Tunis, Tunisie</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-al">
+                    <a href="/batiment.html">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-08">
+                            <div class="shape">
+                                <img src="/Property%201=8.e31721a6.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Mosquée de Bejaïa</span>
+                            <span class="opacity-50">Bejaïa, Algérie</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-al">
+                    <a href="/batiment.html">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-09">
+                            <div class="shape">
+                                <img src="/Property%201=9.99e9d354.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Palais du bey d'Oran</span>
+                            <span class="opacity-50">Oran, Algérie</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-fr">
+                    <a href="/batiment.html">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-10">
+                            <div class="shape">
+                                <img src="/Property%201=10.f90de751.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Synagogue de Châlons-en-Champagne</span>
+                            <span class="opacity-50">Châlons-en-Champagne, France</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-tu">
+                    <a href="/batiment.html">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-11">
+                            <div class="shape">
+                                <img src="/Property%201=11.da7c8607.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Synagogue ashkénaze de Sarajevo</span>
+                            <span class="opacity-50">Sarajero, Bosnie-Herzégovine</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-bat col-span-12 md:col-span-6 lg:col-span-4 text-fade pb-5 pays-tu">
+                    <a href="/batiment.html">
+                        <div class="bg-grey-50 ratio-45 flex items-center justify-center bg-bat bg-bat-12">
+                            <div class="shape">
+                                <img src="/Property%201=12.dccbf4fa.svg">
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-5">
+                            <span class="">Hôtel de ville de Sarajevo</span>
+                            <span class="opacity-50">Sarajevo, Bosnie-Herzégovine</span>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="col-span-3">
+                    <img src="/logo-imaneo-2021-BLANC.11bd5c08.png" class="w-7 h-auto" alt="">
+                    <div class="content__title" data-fade-in-text="">
+                        <p class="text-sm mt-4 text-fade">
+                            IMANEO vise à améliorer l’accès au patrimoine architectural euro-méditerranéen en créant
+                            des
+                            synergies entre les mondes du patrimoine, de l’art contemporain et de la recherche,
+                            appuyées
+                            sur les outils numériques.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-start-7 col-span-6">
+                    <div class="grid grid-cols-6 gap-5">
+                        <div class="flex flex-col space-y-1 col-span-3">
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/batiments.html">Barrage El Carpio</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/carte.html">École Chariatique</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Gare d’Oran</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Gare de Tolede</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Gare de Tozeur</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Hopital Avicenne</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex flex-col space-y-1 col-span-3">
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Marché de Tunis</a>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Mosquée de Bejaia</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Palais du Bey</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Synagogue de Chalons</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Synagogue de Sarajero</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="content__title" data-splitting="" data-fadetitles="">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html">Vijecnica Sarajero</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="p-5 vh-full">
+
+        </div>
+
+    </main>
+
+    <div class="progress-bar"></div>
+
+    <script src="/index.70862351.js" defer=""></script>
+
+    <script>
+</script>
+    <!-- <script type="module" src="js/demo1151408fb.js"></script> -->
+</body>
+
+</html>

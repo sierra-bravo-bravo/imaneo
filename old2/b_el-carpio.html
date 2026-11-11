@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imaneo</title>
+    <meta name="description" content="Some inspiration for text animations on scroll.">
+    <meta name="keywords" content="typography, animation, on-scroll, gsap, ScrollTrigger">
+    <meta name="author" content="Codrops">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
+    <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+</head>
+
+<body class="demo-2 antialiased loading">
+    <main class="transition-container">
+
+        <nav class="text-sm fixed w-full navbar-bg">
+            <div class="p-5 w-full">
+                <div class="flex w-full">
+                    <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
+                        <div class="text-fade">
+                            <!-- Website Logo -->
+                            <a href="/index.html" class="navlink flex items-center">
+                                <img src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex space-x-4">
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/carte.html" class="navlink">Carte</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="#" class="navlink">Vers le site archives ↗</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                            Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <div class="vh-full-mobile p-5 flex flex-col space-y-5">
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/batiments.html">Bâtiments</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/carte.html">Carte</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/films-thema.html">Films Thématiques</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/a-propos.html">À Propos</a>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="p-5 grid grid-cols-12 gap-5 vh-full-desktop" data-fade-in-text="">
+            <div class="col-span-12 lg:col-span-8 flex flex-col justify-between space-y-5 md:space-y-10">
+                <div class="h-10 md:h-5"></div>
+                <div class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col uppercase">
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            Barrage et
+                        </div>
+                    </div>
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            centrale
+                        </div>
+                    </div>
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            hydroélectrique
+                        </div>
+                    </div>
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            d’El Salto
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid grid-cols-8 gap-5">
+                    <div class="col-span-8 md:col-span-6 lg:col-span-5">
+                        <p class="text-base md:text-xl content__title text-fade">
+                            Le pont-barrage d’El-Salto sur le Guadalquivir est un projet scénographique et monumental
+                            commandé par l'entreprise Mengemor, un des acteurs privés majeurs de la production d'énergie
+                            hydroélectrique dans l’Andalousie du début du XXe siècle. Grand porche, tourelle,
+                            balustrades, d’inspiration orientale, évoquent l’architecture des puissantes fortifications
+                            almohades des XIIe-XIIIe siècles, dans un site naturel grandiose.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-4 flex flex-col justify-end container_big_img item-img">
+                <img class="w-full content__title text-fade" src="/01_bat-featured_barrage-el-salto.4e20fa12.jpg" alt="image principale du batiment">
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+                <div class="col-span-12 grid grid-cols-12 gap-5">
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span class="lol">El
+                            Carpio, Espagne</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span class="lol">1922</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span class="lol">Casto Fernández-Shaw e Yturralde
+                            (1896-1978)</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Sculpteur</span><span class="lol">Juan Cristóbal
+                            (1898-1961)
+                        </span></div>
+                </div>
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-2 col-span-5 flex flex-col py-5 overflow-hidden">
+                    <div class="w-full" data-scale-up="" data-mask-up="">
+                        <img class="item-img" src="/5-4_0000_DSCF0454_r.82246ed0.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-start-8 col-span-5 flex flex-col py-5">
+                    <div class="w-full mt-10" data-scroll-up="">
+                        <img class="item-img" src="/5-4_0002_DSCF0510_t.88abae7d.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-1 col-span-5 flex flex-col py-5">
+                    <div class="content__title" data-splitting="" data-effect16="">
+                        <p class="text-2xl md:text-4xl">
+                            Les paroles d’un ornithologue, d’une historienne, de danseurs et des autorités locales
+                            traduisent la multiplicité des regards portés sur ce monument insolite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-start-2 col-span-4 flex flex-col py-5">
+                    <div class="w-full mt-10">
+                        <div class="content__title text-xl" data-fade-in-text="">
+                            <div class="">
+                                <audio controls="">
+                                    <source src="https://api.nakala.fr/data/10.34847/nkl.b00fngrl/d16b9d40b964ca37b4b8aa1f3b75b3a2659404e0?bearer=">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div class="">
+                                <p class="mt-5 text-fade">
+                                    Présentation du podcast en quelques mots Présentation du podcast en quelques mots
+                                    Présentation du podcast en quelques mots
+                                </p>
+                            </div>
+                            <div class="w-full mt-10" data-scale-down="">
+                                <img class="item-img" src="/5-4_0003_DSCF0515_t.67d5ee31.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-7 col-span-5 flex flex-col py-5 overflow-hidden" data-fade-in-text="">
+                    <div class="w-4/5" data-scale-up="">
+                        <img class="item-img" src="/4-5_0000_DSCF0459_p.00597620.jpg" alt="">
+                    </div>
+                    <div class="mt-10 ml-5 content__title" data-splitting="" data-effect16="">
+                        <p class="text-2xl md:text-4xl">
+                            « Ciation issue du podcast ? Ciation issue du podcast ? Ciation issue du podcast ? Ciation
+                            issue du podcast ? »
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10">
+            <div class="w-full">
+                <div class="overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/16-9_0000_DSCF0563.4d4bfdeb.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-5 pt-10 pb-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="w-150vw uppercase text-9xl flex gap-5" data-marquee-l="">
+                    <div class="transform rotate-2 -translate-y-3">
+                        <img class="item-img w-full" src="/5-4_0003_DSCF0515_t.67d5ee31.jpg" alt="">
+                    </div>
+                    <div class="transform -rotate-1 translate-y-5 translate-x-10">
+                        <img class="item-img w-full" src="/5-4_0005_P1080887.6448ed28.jpg" alt="">
+                    </div>
+                    <div class="-rotate-2">
+                        <img class="item-img w-full opacity-0" src="/5-4_0004_DSCF0563.a5203501.jpg" alt="">
+                    </div>
+                    <div class="transform -rotate-3 -translate-y-3 translate-x-6">
+                        <img class="item-img w-full" src="/5-4_0006_Courbes%201.a8f6132d.jpg" alt="">
+                    </div>
+                    <div class="transform rotate-1 translate-y-4">
+                        <img class="item-img w-full opacity-0" src="/5-4_0006_Courbes%201.a8f6132d.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="mt-10 -pb-10 bg-grey-50">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="col-start-4 col-span-6 transform translate-y-10" data-fade-in-text="">
+                    <div class="text-fade">
+                        <img class="item-img" src="/4-5_0001_DSCF0386_p.9a67dc70.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-10"></div>
+        <div class="h-10"></div>
+
+        <div class="p-5">
+            <div class="w-full">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Regard artistique</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+                <div class="py-5 col-span-12 flex flex-col lg:flex-row">
+                    <div class="w-full lg:w-1/2">
+                        <div class="flex space-x-2 ">
+                            <span class="opacity-50">
+                                Chorégraphie
+                            </span>
+                            <span class="lol">
+                                Anna Chirescu</span>
+                        </div>
+                        <div class="flex space-x-2 ">
+                            <span class="opacity-50">
+                                Conception
+                            </span>
+                            <span class="lol">
+                                Anna Chirescu & Florence Pierre
+                            </span>
+                        </div>
+                        <div class="flex space-x-2 ">
+                            <span class="opacity-50">
+                                Montage et stylisme
+                            </span>
+                            <span class="lol">
+                                Florence Pierre
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <div class="flex space-x-2 ">
+                            <span class="opacity-50">
+                                Images et musique
+                            </span>
+                            <span class="lol">
+                                Gordon Spooner
+                            </span>
+                        </div>
+                        <div class="flex space-x-2 "><span class="opacity-50">
+                                Danseur.euses
+                            </span>
+                            <span class="lol">
+                                Anna Chirescu, Catarina Pernao, Carlo Schiavo, Miguel De Sousa
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+        </div>
+        
+
+        <div class="py-10 px-5">
+            <div class="grid grid-cols-12">
+                <div class="ccol-start-1 col-span-12 md:col-start-3 md:col-span-8 flex flex-col gap-y-5">
+                    <div class="video" style="background-color: #000">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/796087703?h=f4ec682585" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="mt-5 content__title" data-splitting="" data-effect16="">
+                        <p class="text-2xl md:text-4xl">
+                            Le projet artistique Noria de la chorégraphe et danseuse Anna Chirescu s’inspire des
+                            machines hydrauliques successivement installées à El Carpio, des premières grandes norias au
+                            barrage actuel, pour tisser un récit autour de l’imaginaire du lieu, entre retenue,
+                            relâchement, immobilité et tournoiement. Anna Chirescu crée des projets chorégraphiques en
+                            collaboration avec d’autres disciplines,
+                            arts visuels, recherche, musique. Son travail articule les notions de contrainte à la
+                            mémoire véhiculée par les gestes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="p-5">
+            <div class="w-full">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Bâtiment suivant</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-5 px-5" data-lines="">
+            <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+        </div>
+
+
+        <div class="bat-list p-5" data-fade-in-text="">
+            <a href="/b_el-carpio.html">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-12 grid grid-cols-12 gap-5 py-5">
+                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-fade">
+                            <h2>
+                                École de droit de Sarajevo
+                            </h2>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Lieu</span>
+                            <span class="lol">Sarajevo, Bosnie</span>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Inauguration</span>
+                            <span class="lol">1922</span>
+                        </div>
+                        <div class="hidden md:flex arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
+                            <span>→</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="progress-bar"></div>
+
+    </main>
+    <script src="/index.70862351.js" defer=""></script>
+    <!-- <script type="module" src="js/demo1151408fb.js"></script> -->
+</body>
+
+</html>

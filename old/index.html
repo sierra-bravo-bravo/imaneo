@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imaneo</title>
+    <meta name="description" content="Some inspiration for text animations on scroll.">
+    <meta name="keywords" content="typography, animation, on-scroll, gsap, ScrollTrigger">
+    <meta name="author" content="Codrops">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
+    <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+    <!-- <script src="//tympanus.net/codrops/adpacks/analytics.js"></script> -->
+</head>
+
+<body class="demo-2 loading antialiased">
+    <main class="transition-container">
+        <!-- <div class="p-5 grid grid-cols-12 gap-5 vh-full fixed w-full">
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+            <div class="col-span-1 opacity-5 bg-grey-50"></div>
+        </div> -->
+
+
+        <header class="p-5 grid grid-cols-12 gap-5 uppercase text-sm fixed w-full navbar-bg">
+            <div class="col-span-6 block">
+                <a href="/index.html">
+                    <img src="/logo-imaneo-2021-BLANC-1.a467ca11.png" class="item-img w-7 h-auto" alt="">
+                </a>
+            </div>
+            <div class="col-span-6">
+                <div class="flex space-x-4 justify-end">
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            <button class="menu-link oh unbutton">
+                                <a href="/batiments.html">Bâtiments</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            <button class="menu-link oh unbutton">
+                                <a href="/carte.html">Carte</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            <button class="menu-link oh unbutton">
+                                <a href="/films-thema.html">Films Thématiques</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="p-5 grid grid-cols-12 gap-5 vh-full">
+            <div class="col-span-12 flex flex-col justify-between space-y-10">
+                <div class="h-5"></div>
+                <div class="text-9xl flex flex-col uppercase items-center">
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles-hero="">
+                            Imaginaires
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles-hero="">
+                            croisés de
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles-hero="">
+                            l’architecture
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles-hero="">
+                            néo-mauresque
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-8 gap-5">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="px-5 pt-10 pb-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="w-150vw uppercase text-9xl flex gap-5" data-marquee-l="">
+                    <div class="transform rotate-2 -translate-y-3">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_5.4ebf88ae.png" alt="">
+                    </div>
+                    <div class="transform -rotate-3 -translate-y-3">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_6.35b649de.png" alt="">
+                    </div>
+                    <div class="transform rotate-1 translate-y-4">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_7.2318913f.png" alt="">
+                    </div>
+                    <div class="transform rotate-2 -translate-y-3">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_8.124a2a3b.png" alt="">
+                    </div>
+                    <div class="-rotate-2">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_9.8c8e8ee7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-5 pb-10 pt-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="w-150vw uppercase text-9xl flex gap-5" data-marquee-r="">
+                    <div class="transform -rotate-3 translate-y-3">
+                        <img class="item-img w-full" src="/Gare%20Oran%20%20Buffet_1.7d57469d.png" alt="">
+                    </div>
+                    <div class="transform rotate-1">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_1.343314da.png" alt="">
+                    </div>
+                    <div class="transform -rotate-2 translate-y-3">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_2.ac005c53.png" alt="">
+                    </div>
+                    <div class="rotate-1">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_3.bd6aa53c.png" alt="">
+                    </div>
+                    <div class="-rotate-1">
+                        <img class="item-img w-full" src="/Gare%20Oran%20ext_4.2b6cfe55.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-fade-in-text="">
+                <div class="col-start-3 col-span-8 flex flex-col py-5">
+                    <div class="w-full">
+                        <div class="content__title flex flex-col items-center">
+                            <span class="opacity-50 uppercase text-fade">Le projet imaneo</span>
+                            <div class="content__title" data-splitting="" data-effect16="">
+                                <p class="text-6xl text-center mt-4">
+                                    IMANEO vise à améliorer l’accès au patrimoine architectural euro-méditerranéen en
+                                    créant des synergies entre les mondes du patrimoine, de l’art contemporain et de la
+                                    recherche, appuyées sur les outils numériques.
+                                </p>
+                                <p class="text-6xl text-center mt-4">
+                                    Le projet utilise une méthode inclusive qui prend en compte, à parts égales,
+                                    l’histoire de ce patrimoine, sa réception sociale contemporaine et son potentiel
+                                    créatif.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-fade-in-text="">
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+                <div class="col-span-4 text-fade pb-5">
+                    <div class="bg-grey-50 ratio-45"></div>
+                    <div class="flex flex-col mt-5"><span class="">Lieu</span><span class="opacity-50">Oran,
+                            Algérie</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="col-span-3">
+                    <img src="/logo-imaneo-2021-BLANC-1.a467ca11.png" class="item-img w-7 h-auto" alt="">
+                    <div class="content__title" data-fade-in-text="">
+                        <p class="text-sm mt-4 text-fade">
+                            IMANEO vise à améliorer l’accès au patrimoine architectural euro-méditerranéen en créant des
+                            synergies entre les mondes du patrimoine, de l’art contemporain et de la recherche, appuyées
+                            sur les outils numériques.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-start-7 col-span-6">
+                    <p>,xlos,ll;xsx</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="p-5 vh-full">
+
+        </div>
+
+    </main>
+    <script>
+</script>
+
+    <script src="/index.70862351.js" defer=""></script>
+
+    <script>
+</script>
+    <!-- <script type="module" src="js/demo1151408fb.js"></script> -->
+</body>
+
+</html>

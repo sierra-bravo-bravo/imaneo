@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imaneo - Gare de Tolède</title>
+    <meta name="description" content="Some inspiration for text animations on scroll.">
+    <meta name="keywords" content="typography, animation, on-scroll, gsap, ScrollTrigger">
+    <meta name="author" content="Codrops">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
+    <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+</head>
+
+<body class="demo-2 antialiased loading">
+    <main class="transition-container">
+
+        <nav class="text-sm fixed w-full navbar-bg">
+            <div class="p-5 w-full">
+                <div class="flex w-full">
+                    <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
+                        <div class="text-fade">
+                            <!-- Website Logo -->
+                            <a href="/index.html" class="navlink flex items-center">
+                                <img src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex space-x-4">
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/carte.html" class="navlink">Carte</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-fade">
+                                    <button class="menu-link oh unbutton">
+                                        <a href="#" class="navlink">Vers le site archives ↗</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                            Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <div class="vh-full-mobile p-5 flex flex-col space-y-5">
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/batiments.html">Bâtiments</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/carte.html">Carte</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/films-thema.html">Films Thématiques</a>
+                    </button>
+
+                    <button class="menu-link oh unbutton">
+                        <a class="text-2xl" href="/a-propos.html">À Propos</a>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="p-5 grid grid-cols-12 sm:gap-5 gap-5 vh-full-desktop" data-fade-in-text="">
+            <div class="col-span-12 lg:col-span-8 flex flex-col justify-between space-y-5 md:space-y-0">
+                <div class="h-10 md:h-5"></div>
+                <div class="text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl flex flex-col uppercase">
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            Gare
+                        </div>
+                    </div>
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            ferroviaire
+                        </div>
+                    </div>
+                    <div class="overflow-y-hidden">
+                        <div class="content__title" data-splitting="" data-fadetitles="">
+                            de Tozeur
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-8 sm:gap-5 md:gap-5">
+                    <div class="col-span-8 md:col-span-6 lg:col-span-5">
+                        <div class="shape w-5 h-5 mb-3">
+                            <div class="text-fade">
+                                <img src="/Property%201=5.6335986e.svg">
+                            </div>
+                        </div>
+                        <p class="text-base md:text-xl content__title text-fade">
+                            Construite au début du XXe siècle dans le contexte du développement du réseau ferré tunisien
+                            sous l’impulsion des Compagnies minières, la gare de Tozeur apparaît aujourd’hui comme un
+                            édifice solitaire, quasi abandonné. Son architecture en briques de terre cuite assemblées en
+                            bandeaux de denticules, de chevrons, en réseaux losangés, réinterprète l’architecture
+                            traditionnelle des oasis du Djérid.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end container_big_img item-img">
+                <img class="w-full content__title text-fade" src="/05_bat-featured_gare-tozeur.bed385d9.jpg" alt="image principale du batiment">
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+                <div class="col-span-12 grid grid-cols-12 gap-5">
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span class="lol">Tozeur, Tunisie</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Construction</span><span class="lol">1910 - 1912</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span class="lol">Inconnu
+                        </span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Entrepreneur</span><span class="lol">Almo Pucciarelli
+                            (s.d.)
+                        </span></div>
+                </div>
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="lg:col-start-1 col-span-12 lg:col-span-6 flex flex-col overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/5-4-tozeur_0001_IMG_7979.885be272.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="lg:col-start-7 col-span-12 lg:col-span-6 bg-light-blue flex items-center justify-center">
+                    <div class="lg:w-3/4 overflow-hidden">
+                        <img class="item-img" src="/5-4-tozeur_0000_IMG_8110.7d065f18.jpg" alt="" data-scale-up="" data-mask-up="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 lg:mt-10">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="lg:col-start-2 col-span-12 lg:col-span-3 flex flex-col lg:py-5 overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/4-5_0000_IMG_7586-scaled.89ec10e7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="lg:col-start-8 col-span-12 lg:col-span-5 flex flex-col lg:py-5">
+                    <div class="w-full lg:mt-10" data-scroll-up="">
+                        <img class="item-img" src="/5-4_0000_IMG_7712-2500x1667.2761daec.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10">
+            <div class="w-full">
+                <div class="overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/16-9_tozeur2.a79e1f4b.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 lg:mt-10">
+            <div class="grid grid-cols-12 gap-5">
+                <div class=" col-span-12 lg:col-span-3 flex items-end justify-center">
+                    <div class="w-full overflow-hidden">
+                        <img class="item-img" src="/5-4-tozeur_0003_IMG_7895.f6fae7d6.jpg" alt="" data-scale-up="" data-mask-up="">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-start-6 lg:col-span-7 flex flex-col overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/5-4-tozeur_0002_IMG_7925.0f11931d.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-start-4 lg:col-span-5 lg:mt-10 flex flex-col overflow-hidden">
+                    <div class="w-full">
+                        <img class="item-img" src="/5-4-tozeur_0004_IMG_7862.9a26e6af.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="-pb-10 bg-light-blue mt-10">
+            <div class="grid grid-cols-12 gap-5" data-lines="">
+                <div class="col-start-3 lg:col-start-4 col-span-8 lg:col-span-6 transform translate-y-10" data-fade-in-text="">
+                    <div class="text-fade">
+                        <img class="item-img" src="/5-4-tozeur_0005_IMG_7827.a88a76a9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 mt-10 lg:pt-10" data-fade-in-text="">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-12 lg:col-span-4 flex flex-col lg:py-10 overflow-hidden items-end justify-end">
+                    <div class="w-full text-fade">
+                        <img class="item-img" src="/5-4_0002_IMG_73581-2500x1667.48b681ba.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col lg:py-10">
+                    <div class="w-full text-fade">
+                        <img class="item-img" src="/4-5_0001_IMG_7292-1667x2500.75929ba3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 flex flex-col lg:py-10">
+                    <div class="w-full text-fade">
+                        <img class="item-img" src="/5-4_0001_IMG_7180-2500x1667.22185a6c.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-5">
+            <div class="w-full pt-10">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Histoire</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+            </div>
+        </div>
+
+        <div class="px-5 md:pt-10 pb-5 w-full">
+            <div class="grid grid-cols-12 gap-5" data-lines="" data-fade-in-text="">
+                <div class="w-150vw uppercase flex gap-5" data-marquee-l="">
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0000_Tozeur-gare.01dc1c87.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0001_Gare_mention-DISEGNI.bf8ed5d1.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0002_Tozeur001-1881x2500.fd8fe7b6.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0003_Tozeur-gare_1937.32f550cf.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0000_Tozeur-gare.01dc1c87.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="px-5 pb-10">
+            <div class="grid grid-cols-12 gap-5" data-lines="" data-fade-in-text="">
+                <div class="w-150vw uppercase text-9xl flex gap-5" data-marquee-r="">
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0004_Carte-Photo-TUNISIE-SFAX-La-Gare-tres-bon-etat-voirphotos-e1693900501784.3a47a9e2.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0005_Tozeur-ref_historique.d6a0a861.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0006_Tozeur_Grd-Hotel-Bellevue.5e09e11e.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0007_Tozeur-gouvernorat.22311e16.jpg" alt="">
+                    </div>
+                    <div class="text-fade">
+                        <img class="item-img opacity-90 w-full" src="/histoire_tozeur_0004_Carte-Photo-TUNISIE-SFAX-La-Gare-tres-bon-etat-voirphotos-e1693900501784.3a47a9e2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-10"></div>
+        <div class="h-10"></div>
+
+        <div class="p-5">
+            <div class="w-full">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Regard artistique</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="grid grid-cols-12" data-lines="">
+                <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+                <div class="py-5 col-span-12 flex flex-col lg:flex-row">
+                    <div class="w-full lg:w-1/2">
+                        <div class="flex space-x-2 ">
+                            <span class="opacity-50">
+                                Conception et réalisation
+                            </span>
+                            <span class="lol">
+                                Sanja Vrzić et Diogo Pereira</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+        </div>
+        
+
+        <div class="py-10 px-5">
+            <div class="grid grid-cols-12">
+                <div class="ccol-start-1 col-span-12 md:col-start-3 md:col-span-8 flex flex-col gap-y-5">
+                    <div style="padding: 56.25% 0 0; position: relative"><iframe src="https://player.vimeo.com/video/791921513?h=1bfb2c0b15&byline=0&portrait=0" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <div class="mt-5 content__title" data-splitting="" data-effect16="">
+                        <p class="text-2xl md:text-4xl">
+                            Shapes of Earth, 10’54
+                        </p>
+                        <p class="text-2xl md:text-4xl">
+                            Deux artistes vidéastes nous invitent à explorer le lien entre la gare et la tradition
+                            constructive multiséculaire des oasis du Djérid à travers un film contemplatif qui capte le
+                            processus lent et immuable de la transformation de l’argile brute en brique puis en
+                            architecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-10"></div>
+
+        <div class="p-5">
+            <div class="w-full">
+                <div class="overflow-hidden" data-fade-in-text="">
+                    <span class="opacity-50 uppercase text-fade">Bâtiment suivant</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-5 px-5" data-lines="">
+            <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
+        </div>
+
+
+        <div class="bat-list p-5" data-fade-in-text="">
+            <a href="/06-hopital-avicenne.html">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-12 grid grid-cols-12 gap-5 py-5">
+                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-fade">
+                            <h2>
+                                Hôpital Avicenne de Bobigny
+                            </h2>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Lieu</span>
+                            <span class="lol">Bobigny, France</span>
+                        </div>
+                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Inauguration</span>
+                            <span class="lol">1935</span>
+                        </div>
+                        <div class="hidden md:flex arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
+                            <span>→</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="mt-10 bg-yellow text-dark px-5 py-2 mb-1">
+            <div class="grid grid-cols-12" data-lines="">
+                <div class="col-span-12 flex flex-col lg:flex-row gap-2" data-fade-in-text="">
+                    <div class="">
+                        <a class="text-dark hover:text-grey-500" href="/mentions-legales.html">Mentions Légales</a>
+                    </div>
+                    <div class="">
+                        <a class="text-dark hover:text-grey-500" href="/credits.html">Crédits</a>
+                    </div>
+                    <div class="">
+                        <p>Accessibilité : partiellement conforme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar"></div>
+
+    </main>
+    <script src="/index.70862351.js" defer=""></script>
+    <!-- <script type="module" src="js/demo1151408fb.js"></script> -->
+</body>
+
+</html>
