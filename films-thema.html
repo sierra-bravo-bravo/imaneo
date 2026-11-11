@@ -23,44 +23,44 @@ var supportsCssVars = function() {
     <!-- <script src="//tympanus.net/codrops/adpacks/analytics.js"></script> -->
 </head>
 
-<body class="demo-2 loading antialiased">
-    <main class="transition-container">
-        <nav class="text-sm fixed w-full navbar-bg">
+<body class="is-loading antialiased">
+    <main class="page">
+        <nav class="text-sm fixed w-full site-nav">
             <div class="p-5 w-full">
                 <div class="flex w-full">
                     <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
-                        <div class="text-fade">
+                        <div class="fx-reveal">
                             <!-- Website Logo -->
-                            <a href="/index.html" class="navlink flex items-center">
+                            <a href="/index.html" class="nav-link flex items-center">
                                 <img width="2410" height="2301" src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
                             </a>
                         </div>
                         <!-- Primary Navbar items -->
                         <div class="hidden md:flex space-x-4 items-center">
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/batiments.html" class="nav-link">Bâtiments</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/films-thema.html" class="nav-link">Films Thématiques</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/a-propos.html" class="nav-link">À Propos</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade flex items-center">
-                                    <a href="https://imaneo-data.inha.fr" class="navlink">
+                                <div class="fx-reveal flex items-center">
+                                    <a href="https://imaneo-data.inha.fr" class="nav-link">
                                         <button class="marquee-btn" type="button">
                                             <span>Tous les contenus et données - All the data and ressources - Todo el
                                                 contenido y
@@ -80,32 +80,32 @@ var supportsCssVars = function() {
                     </div>
                     <!-- Mobile menu button -->
                     <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                        <button class="nav-mobile__toggle text-base uppercase py-2 pl-2">
                             Menu
                         </button>
                     </div>
                 </div>
             </div>
             <!-- mobile menu -->
-            <div class="hidden mobile-menu">
+            <div class="hidden nav-mobile">
                 <div class="p-5 flex flex-col items-center align-middle space-y-6 text-2xl">
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/batiments.html">Bâtiments</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/batiments.html">Bâtiments</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/films-thema.html">Films Thématiques</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/films-thema.html">Films Thématiques</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/a-propos.html">À Propos</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/a-propos.html">À Propos</a>
                         </button>
                     </div>
                     <div class="flex">
-                        <a href="https://imaneo-data.inha.fr" class="navlink navlink mr-2">
+                        <a href="https://imaneo-data.inha.fr" class="nav-link nav-link mr-2">
                             <button class="marquee-btn h-7" type="button">
                                 <span>Tous les contenus et données - All the data and ressources - Todo el
                                     contenido y
@@ -126,42 +126,42 @@ var supportsCssVars = function() {
                 <div class="h-5"></div>
                 <div class="text-4xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col uppercase items-center">
                     <div class="overflow-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             Films
                         </div>
                     </div>
                     <div class="overflow-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             thématiques
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-span-12 flex flex-col w-full lg:items-center mt-5 lg:mt-5" data-fade-in-text="">
-                <div class="flex py-2 space-x-2 text-fade">
+                <div class="flex py-2 space-x-2 fx-reveal">
                     <span class="opacity-50">01</span>
-                    <span class="lol">Sources de l’architecture orientaliste en Europe</span>
+                    <span>Sources de l’architecture orientaliste en Europe</span>
                 </div>
-                <div class="flex py-2 space-x-2 text-fade">
+                <div class="flex py-2 space-x-2 fx-reveal">
                     <span class="opacity-50">02</span>
-                    <span class="lol">Diffusion des styles néo-mauresque et néo-mamelouk en Europe</span>
+                    <span>Diffusion des styles néo-mauresque et néo-mamelouk en Europe</span>
                 </div>
-                <div class="flex py-2 space-x-2 text-fade">
+                <div class="flex py-2 space-x-2 fx-reveal">
                     <span class="opacity-50">03</span>
-                    <span class="lol">Nationalisme et impérialisme : architectures néo-mauresques en Espagne, Algérie,
+                    <span>Nationalisme et impérialisme : architectures néo-mauresques en Espagne, Algérie,
                         France et Bosnie</span>
                 </div>
-                <div class="flex py-2 space-x-2 text-fade">
+                <div class="flex py-2 space-x-2 fx-reveal">
                     <span class="opacity-50">04</span>
-                    <span class="lol">Le style néo-mauresque au Maghreb : une histoire contrariée ?</span>
+                    <span>Le style néo-mauresque au Maghreb : une histoire contrariée ?</span>
                 </div>
-                <div class="flex py-2 space-x-2 text-fade">
+                <div class="flex py-2 space-x-2 fx-reveal">
                     <span class="opacity-50">05</span>
-                    <span class="lol">Le style néo-mauresque en Bosnie et Herzégovine : une histoire contrariée ?</span>
+                    <span>Le style néo-mauresque en Bosnie et Herzégovine : une histoire contrariée ?</span>
                 </div>
-                <div class="flex py-2 space-x-2 text-fade">
+                <div class="flex py-2 space-x-2 fx-reveal">
                     <span class="opacity-50">06</span>
-                    <span class="lol">Le néo-mauresque : un style pour les synagogues ?</span>
+                    <span>Le néo-mauresque : un style pour les synagogues ?</span>
                 </div>
             </div>
             <div class="line col-span-12 h-px bg-grey-50 opacity-50 my-5 lg:my-10"></div>
@@ -176,8 +176,8 @@ var supportsCssVars = function() {
 
                     <div class="gap-5">
                         <div class="text-xl lg:text-5xl flex gap-5">
-                            <div class="">
-                                <div class="content__title text-fade ">
+                            <div>
+                                <div class="fx-split fx-reveal">
                                     <span class="opacity-50 mr-3">01</span>Sources de l’architecture orientaliste en
                                     Europe
                                 </div>
@@ -189,9 +189,9 @@ var supportsCssVars = function() {
 
 
                     <div class="overflow-hidden mt-5">
-                        <div class="opacity-50 content__title">Résumé du film</div>
+                        <div class="opacity-50 fx-split">Résumé du film</div>
                     </div>
-                    <div class="">
+                    <div>
                         <p class="text-2xl md:text-4xl">
                             Des historiens et historiennes de l’art font le point sur les principaux lieux sur lesquels
                             se fondent les savoirs et la vision de l’Orient transmis aux architectes du XIXe siècle.
@@ -200,34 +200,34 @@ var supportsCssVars = function() {
 
                     <div class="col-span-3 flex flex-col py-5">
                         <div class="overflow-hidden">
-                            <div class="opacity-50 content__title">Bâtiments associés
+                            <div class="opacity-50 fx-split">Bâtiments associés
                             </div>
                         </div>
                         <div class="mt-5 grid grid-col-1 lg:grid-cols-2 2xl:grid-cols-3">
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=1.788b6251.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/01-el-salto.html" class="navlink">Barrage d’El Salto</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/01-el-salto.html" class="nav-link">Barrage d’El Salto</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=2.ca4f451c.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/02-ecole-sarajevo.html" class="navlink">École de droit de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/02-ecole-sarajevo.html" class="nav-link">École de droit de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -235,28 +235,28 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=4.15ebe4bd.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/04-gare-tolede.html" class="navlink">Gare de Tolède</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/04-gare-tolede.html" class="nav-link">Gare de Tolède</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=5.6335986e.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/06-hopital-avicenne.html" class="navlink">Hôpital Avicenne de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/06-hopital-avicenne.html" class="nav-link">Hôpital Avicenne de
                                                 Bobigny</a>
                                         </button>
                                     </div>
@@ -264,14 +264,14 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=10.f90de751.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/10-synagogue-sarajevo.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/10-synagogue-sarajevo.html" class="nav-link">Synagogue de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -279,14 +279,14 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=11.da7c8607.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/11-synagogue-chalons.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/11-synagogue-chalons.html" class="nav-link">Synagogue de
                                                 Châlons-en-Champagne</a>
                                         </button>
                                     </div>
@@ -294,14 +294,14 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=12.dccbf4fa.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/12-vijecnica-sarajevo.html" class="navlink">Hôtel de ville de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/12-vijecnica-sarajevo.html" class="nav-link">Hôtel de ville de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -328,8 +328,8 @@ var supportsCssVars = function() {
 
                     <div class="gap-5">
                         <div class="text-xl lg:text-5xl flex gap-5">
-                            <div class="">
-                                <div class="content__title text-fade">
+                            <div>
+                                <div class="fx-split fx-reveal">
                                     <span class="opacity-50 mr-3">02</span>Diffusion des styles néo-mauresque et
                                     néo-mamelouk
                                     en Europe
@@ -342,9 +342,9 @@ var supportsCssVars = function() {
 
 
                     <div class="overflow-hidden mt-5">
-                        <div class="opacity-50 content__title">Résumé du film</div>
+                        <div class="opacity-50 fx-split">Résumé du film</div>
                     </div>
-                    <div class="">
+                    <div>
                         <p class="text-2xl md:text-4xl">
                             Des historiens et historiennes de l’art présentent les principaux vecteurs de transmission
                             (ouvrages, expositions, moulages) des formes et des décors de l’architecture islamique
@@ -354,34 +354,34 @@ var supportsCssVars = function() {
 
                     <div class="col-span-3 flex flex-col py-5">
                         <div class="overflow-hidden">
-                            <div class="opacity-50 content__title">Bâtiments associés
+                            <div class="opacity-50 fx-split">Bâtiments associés
                             </div>
                         </div>
                         <div class="mt-5 grid grid-col-1 lg:grid-cols-2 2xl:grid-cols-3">
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=1.788b6251.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/01-el-salto.html" class="navlink">Barrage d’El Salto</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/01-el-salto.html" class="nav-link">Barrage d’El Salto</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=2.ca4f451c.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/02-ecole-sarajevo.html" class="navlink">École de droit de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/02-ecole-sarajevo.html" class="nav-link">École de droit de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -389,28 +389,28 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=4.15ebe4bd.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/04-gare-tolede.html" class="navlink">Gare de Tolède</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/04-gare-tolede.html" class="nav-link">Gare de Tolède</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=5.6335986e.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/06-hopital-avicenne.html" class="navlink">Hôpital Avicenne de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/06-hopital-avicenne.html" class="nav-link">Hôpital Avicenne de
                                                 Bobigny</a>
                                         </button>
                                     </div>
@@ -418,14 +418,14 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=10.f90de751.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/10-synagogue-sarajevo.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/10-synagogue-sarajevo.html" class="nav-link">Synagogue de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -433,14 +433,14 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=11.da7c8607.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/11-synagogue-chalons.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/11-synagogue-chalons.html" class="nav-link">Synagogue de
                                                 Châlons-en-Champagne</a>
                                         </button>
                                     </div>
@@ -448,14 +448,14 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=12.dccbf4fa.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/12-vijecnica-sarajevo.html" class="navlink">Hôtel de ville de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/12-vijecnica-sarajevo.html" class="nav-link">Hôtel de ville de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -481,8 +481,8 @@ var supportsCssVars = function() {
 
                     <div class="gap-5">
                         <div class="text-xl lg:text-5xl flex gap-5">
-                            <div class="">
-                                <div class="content__title text-fade">
+                            <div>
+                                <div class="fx-split fx-reveal">
                                     <span class="opacity-50 mr-3">03</span>Nationalisme et impérialisme :
                                     architectures néo-mauresques en Espagne, Algérie, France et Bosnie
                                 </div>
@@ -494,9 +494,9 @@ var supportsCssVars = function() {
 
 
                     <div class="overflow-hidden mt-5">
-                        <div class="opacity-50 content__title">Résumé du film</div>
+                        <div class="opacity-50 fx-split">Résumé du film</div>
                     </div>
-                    <div class="">
+                    <div>
                         <p class="text-2xl md:text-4xl">
                             Des historiennes et historiens expliquent comment, selon les contextes locaux,
                             l’architecture orientaliste a accompagné, entre la fin du XIXe et le début du XXe siècle, la
@@ -506,34 +506,34 @@ var supportsCssVars = function() {
 
                     <div class="col-span-3 flex flex-col py-5">
                         <div class="overflow-hidden">
-                            <div class="opacity-50 content__title">Bâtiments associés
+                            <div class="opacity-50 fx-split">Bâtiments associés
                             </div>
                         </div>
                         <div class="mt-5 grid grid-col-1 lg:grid-cols-2 2xl:grid-cols-3">
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=1.788b6251.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/01-el-salto.html" class="navlink">Barrage d’El Salto</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/01-el-salto.html" class="nav-link">Barrage d’El Salto</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=2.ca4f451c.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/02-ecole-sarajevo.html" class="navlink">École de droit de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/02-ecole-sarajevo.html" class="nav-link">École de droit de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -541,56 +541,56 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=3.b6aa1d23.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/03-gare-oran.html" class="navlink">Gare d'Oran</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/03-gare-oran.html" class="nav-link">Gare d'Oran</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=4.15ebe4bd.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/04-gare-tolede.html" class="navlink">Gare de Tolède</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/04-gare-tolede.html" class="nav-link">Gare de Tolède</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=5.6335986e.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/05-gare-tozeur.html" class="navlink">Gare de Tozeur</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/05-gare-tozeur.html" class="nav-link">Gare de Tozeur</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=5.6335986e.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/06-hopital-avicenne.html" class="navlink">Hôpital Avicenne de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/06-hopital-avicenne.html" class="nav-link">Hôpital Avicenne de
                                                 Bobigny</a>
                                         </button>
                                     </div>
@@ -598,56 +598,56 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=7.3062a5b3.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/07-marche-central.html" class="navlink">Marché central de Tunis</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/07-marche-central.html" class="nav-link">Marché central de Tunis</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=8.e31721a6.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/08-mosquee-sidi-soufi.html" class="navlink">Mosquée de Bejaïa</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/08-mosquee-sidi-soufi.html" class="nav-link">Mosquée de Bejaïa</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=9.99e9d354.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/09-palais-bey.html" class="navlink">Palais du bey d'Oran</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/09-palais-bey.html" class="nav-link">Palais du bey d'Oran</a>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=10.f90de751.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/10-synagogue-sarajevo.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/10-synagogue-sarajevo.html" class="nav-link">Synagogue de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -655,14 +655,14 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=11.da7c8607.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/11-synagogue-chalons.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/11-synagogue-chalons.html" class="nav-link">Synagogue de
                                                 Châlons-en-Champagne</a>
                                         </button>
                                     </div>
@@ -670,14 +670,14 @@ var supportsCssVars = function() {
                             </div>
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=12.dccbf4fa.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/12-vijecnica-sarajevo.html" class="navlink">Hôtel de ville de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/12-vijecnica-sarajevo.html" class="nav-link">Hôtel de ville de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -703,8 +703,8 @@ var supportsCssVars = function() {
 
                     <div class="gap-5">
                         <div class="text-xl lg:text-5xl flex gap-5">
-                            <div class="">
-                                <div class="content__title text-fade">
+                            <div>
+                                <div class="fx-split fx-reveal">
                                     <span class="opacity-50 mr-3">04</span>Le style néo-mauresque au Maghreb : une
                                     histoire contrariée ?
                                 </div>
@@ -716,9 +716,9 @@ var supportsCssVars = function() {
 
 
                     <div class="overflow-hidden mt-5">
-                        <div class="opacity-50 content__title">Résumé du film</div>
+                        <div class="opacity-50 fx-split">Résumé du film</div>
                     </div>
-                    <div class="">
+                    <div>
                         <p class="text-2xl md:text-4xl">
                             Des historiens et architectes algériens, français et tunisiens rendent compte des divers
                             modes d’introduction du style néo-mauresque au Maghreb entre la fin du XIXe et le début du
@@ -729,20 +729,20 @@ var supportsCssVars = function() {
 
                     <div class="col-span-3 flex flex-col py-5">
                         <div class="overflow-hidden">
-                            <div class="opacity-50 content__title">Bâtiments associés
+                            <div class="opacity-50 fx-split">Bâtiments associés
                             </div>
                         </div>
                         <div class="mt-5 grid grid-col-1 lg:grid-cols-2 2xl:grid-cols-3">
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=3.b6aa1d23.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/03-gare-oran.html" class="navlink">Gare d'Oran</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/03-gare-oran.html" class="nav-link">Gare d'Oran</a>
                                         </button>
                                     </div>
                                 </div>
@@ -750,14 +750,14 @@ var supportsCssVars = function() {
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=5.6335986e.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/05-gare-tozeur.html" class="navlink">Gare de Tozeur</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/05-gare-tozeur.html" class="nav-link">Gare de Tozeur</a>
                                         </button>
                                     </div>
                                 </div>
@@ -765,14 +765,14 @@ var supportsCssVars = function() {
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=7.3062a5b3.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/07-marche-central.html" class="navlink">Marché central de Tunis</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/07-marche-central.html" class="nav-link">Marché central de Tunis</a>
                                         </button>
                                     </div>
                                 </div>
@@ -780,14 +780,14 @@ var supportsCssVars = function() {
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=8.e31721a6.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/08-mosquee-sidi-soufi.html" class="navlink">Mosquée de Bajaïa</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/08-mosquee-sidi-soufi.html" class="nav-link">Mosquée de Bajaïa</a>
                                         </button>
                                     </div>
                                 </div>
@@ -795,14 +795,14 @@ var supportsCssVars = function() {
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=9.99e9d354.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/09-palais-bey.html" class="navlink">Palais du bey d'Oran</a>
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/09-palais-bey.html" class="nav-link">Palais du bey d'Oran</a>
                                         </button>
                                     </div>
                                 </div>
@@ -826,8 +826,8 @@ var supportsCssVars = function() {
 
                     <div class="gap-5">
                         <div class="text-xl lg:text-5xl flex gap-5">
-                            <div class="">
-                                <div class="content__title text-fade">
+                            <div>
+                                <div class="fx-split fx-reveal">
                                     <span class="opacity-50 mr-3">05</span>Le style néo-mauresque en Bosnie et
                                     Herzégovine : une histoire contrariée ?
                                 </div>
@@ -839,9 +839,9 @@ var supportsCssVars = function() {
 
 
                     <div class="overflow-hidden mt-5">
-                        <div class="opacity-50 content__title">Résumé du film</div>
+                        <div class="opacity-50 fx-split">Résumé du film</div>
                     </div>
-                    <div class="">
+                    <div>
                         <p class="text-2xl md:text-4xl">
                             Des architectes et conservateurs du patrimoine relatent le contexte d'émergence et le
                             message politique de l’architecture orientaliste de Bosnie-Herzégovine à la fin du XIXe
@@ -851,21 +851,21 @@ var supportsCssVars = function() {
 
                     <div class="col-span-3 flex flex-col py-5">
                         <div class="overflow-hidden">
-                            <div class="opacity-50 content__title">Bâtiments associés
+                            <div class="opacity-50 fx-split">Bâtiments associés
                             </div>
                         </div>
                         <div class="mt-5 grid grid-col-1 lg:grid-cols-2 2xl:grid-cols-3">
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=2.ca4f451c.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/02-ecole-sarajevo.html" class="navlink">École de droit de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/02-ecole-sarajevo.html" class="nav-link">École de droit de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -874,14 +874,14 @@ var supportsCssVars = function() {
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=10.f90de751.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/10-synagogue-sarajevo.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/10-synagogue-sarajevo.html" class="nav-link">Synagogue de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -890,14 +890,14 @@ var supportsCssVars = function() {
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=12.dccbf4fa.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/12-vijecnica-sarajevo.html" class="navlink">Hôtel de ville de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/12-vijecnica-sarajevo.html" class="nav-link">Hôtel de ville de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -923,8 +923,8 @@ var supportsCssVars = function() {
 
                     <div class="gap-5">
                         <div class="text-xl lg:text-5xl flex gap-5">
-                            <div class="">
-                                <div class="content__title text-fade">
+                            <div>
+                                <div class="fx-split fx-reveal">
                                     <span class="opacity-50 mr-3">06</span>Le néo-mauresque : un style pour les
                                     synagogues ?
                                 </div>
@@ -935,9 +935,9 @@ var supportsCssVars = function() {
                     <div style="padding: 56.25% 0 0; position: relative"><iframe title="Vidéo – Films thématiques (6/6)" loading="lazy" src="https://www.canal-u.tv/chaines/invisu/embed/181604" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
 
                     <div class="overflow-hidden mt-5">
-                        <div class="opacity-50 content__title">Résumé du film</div>
+                        <div class="opacity-50 fx-split">Résumé du film</div>
                     </div>
-                    <div class="">
+                    <div>
                         <p class="text-2xl md:text-4xl">
                             Un historien de l’art spécialiste du patrimoine juif explique l'engouement, dans la seconde
                             moitié du XIXe siècle, des architectes et des communautés juives européennes pour la
@@ -947,21 +947,21 @@ var supportsCssVars = function() {
 
                     <div class="col-span-3 flex flex-col py-5">
                         <div class="overflow-hidden">
-                            <div class="opacity-50 content__title">Bâtiments associés
+                            <div class="opacity-50 fx-split">Bâtiments associés
                             </div>
                         </div>
                         <div class="mt-5 grid grid-col-1 lg:grid-cols-2 2xl:grid-cols-3">
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=10.f90de751.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/10-synagogue-sarajevo.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/10-synagogue-sarajevo.html" class="nav-link">Synagogue de
                                                 Sarajevo</a>
                                         </button>
                                     </div>
@@ -970,14 +970,14 @@ var supportsCssVars = function() {
 
                             <div class="overflow-hidden inline">
                                 <div class="flex space-x-1">
-                                    <div class="shape w-5 h-5 mb-3">
-                                        <div class="">
+                                    <div class="building-card__shape w-5 h-5 mb-3">
+                                        <div>
                                             <img src="/Property%201=11.da7c8607.svg">
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <button class="menu-link oh unbutton">
-                                            <a href="/11-synagogue-chalons.html" class="navlink">Synagogue de
+                                    <div>
+                                        <button class="nav-menu-link btn-reset">
+                                            <a href="/11-synagogue-chalons.html" class="nav-link">Synagogue de
                                                 Châlons-en-Champagne</a>
                                         </button>
                                     </div>
@@ -995,7 +995,7 @@ var supportsCssVars = function() {
         <div class="mt-10 bg-yellow text-dark px-5 py-2 mb-1">
             <div class="grid grid-cols-12" data-lines="">
                 <div class="col-span-12 lg:col-span-6 flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <p>Retrouvez tous les contenus et toutes les données sur le
                             <a class="text-dark hover:opacity-60 hover:text-dark border-b" href="https://imaneo-data.inha.fr">site
                                 archives ↗</a>
@@ -1003,14 +1003,14 @@ var supportsCssVars = function() {
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-6 lg:justify-end flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/mentions-legales.html">Mentions
                             Légales</a>
                     </div>
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/credits.html">Crédits</a>
                     </div>
-                    <div class="">
+                    <div>
                         <p>Accessibilité : partiellement conforme</p>
                     </div>
                 </div>

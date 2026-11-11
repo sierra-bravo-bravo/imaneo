@@ -24,45 +24,45 @@ var supportsCssVars = function() {
 </script>
 </head>
 
-<body class="demo-2 antialiased loading">
-    <main class="transition-container">
+<body class="antialiased is-loading">
+    <main class="page">
 
-        <nav class="text-sm fixed w-full navbar-bg">
+        <nav class="text-sm fixed w-full site-nav">
             <div class="p-5 w-full">
                 <div class="flex w-full">
                     <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
-                        <div class="text-fade">
+                        <div class="fx-reveal">
                             <!-- Website Logo -->
-                            <a href="/index.html" class="navlink flex items-center">
+                            <a href="/index.html" class="nav-link flex items-center">
                                 <img width="2410" height="2301" src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
                             </a>
                         </div>
                         <!-- Primary Navbar items -->
                         <div class="hidden md:flex space-x-4 items-center">
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/batiments.html" class="nav-link">Bâtiments</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/films-thema.html" class="nav-link">Films Thématiques</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/a-propos.html" class="nav-link">À Propos</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade flex items-center">
-                                    <a href="https://imaneo-data.inha.fr" class="navlink">
+                                <div class="fx-reveal flex items-center">
+                                    <a href="https://imaneo-data.inha.fr" class="nav-link">
                                         <button class="marquee-btn" type="button">
                                             <span>Tous les contenus et données - All the data and ressources - Todo el
                                                 contenido y
@@ -82,32 +82,32 @@ var supportsCssVars = function() {
                     </div>
                     <!-- Mobile menu button -->
                     <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                        <button class="nav-mobile__toggle text-base uppercase py-2 pl-2">
                             Menu
                         </button>
                     </div>
                 </div>
             </div>
             <!-- mobile menu -->
-            <div class="hidden mobile-menu">
+            <div class="hidden nav-mobile">
                 <div class="p-5 flex flex-col items-center align-middle space-y-6 text-2xl">
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/batiments.html">Bâtiments</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/batiments.html">Bâtiments</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/films-thema.html">Films Thématiques</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/films-thema.html">Films Thématiques</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/a-propos.html">À Propos</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/a-propos.html">À Propos</a>
                         </button>
                     </div>
                     <div class="flex">
-                        <a href="https://imaneo-data.inha.fr" class="navlink navlink mr-2">
+                        <a href="https://imaneo-data.inha.fr" class="nav-link nav-link mr-2">
                             <button class="marquee-btn h-7" type="button">
                                 <span>Tous les contenus et données - All the data and ressources - Todo el
                                     contenido y
@@ -128,22 +128,22 @@ var supportsCssVars = function() {
                 <div class="h-10 md:h-5"></div>
                 <div class="text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl flex flex-col uppercase">
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             Barrage et
                         </div>
                     </div>
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             centrale
                         </div>
                     </div>
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             hydroélectrique
                         </div>
                     </div>
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             d’El Salto
                         </div>
                     </div>
@@ -151,12 +151,12 @@ var supportsCssVars = function() {
                 </div>
                 <div class="grid grid-cols-8 gap-y-5 lg:gap-5">
                     <div class="col-span-8 md:col-span-6 lg:col-span-5">
-                        <div class="shape w-5 h-5 mb-3">
-                            <div class="text-fade">
+                        <div class="building-card__shape w-5 h-5 mb-3">
+                            <div class="fx-reveal">
                                 <img src="/Property%201=1.788b6251.svg">
                             </div>
                         </div>
-                        <p class="text-base md:text-xl content__title text-fade">
+                        <p class="text-base md:text-xl fx-split fx-reveal">
                             Le pont-barrage d’El-Salto sur le Guadalquivir est un projet scénographique et monumental
                             commandé par l'entreprise Mengemor, un des acteurs privés majeurs de la production d'énergie
                             hydroélectrique dans l’Andalousie du début du XXe siècle. Grand porche, tourelle,
@@ -166,8 +166,8 @@ var supportsCssVars = function() {
                     </div>
                 </div>
             </div>
-            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end container_big_img item-img">
-                <img width="874" height="1092" class="w-full content__title text-fade" src="/01_bat-featured_barrage-el-salto.4e20fa12.jpg" alt="image principale du batiment">
+            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end">
+                <img width="874" height="1092" class="w-full fx-split fx-reveal" src="/01_bat-featured_barrage-el-salto.4e20fa12.jpg" alt="image principale du batiment">
             </div>
         </div>
 
@@ -175,12 +175,12 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="">
                 <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
                 <div class="col-span-12 grid grid-cols-12 gap-y-5 lg:gap-5">
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span class="lol">El
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span>El
                             Carpio, Espagne</span></div>
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span class="lol">1922</span></div>
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span class="lol">Casto Fernández-Shaw e Yturralde
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span>1922</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span>Casto Fernández-Shaw e Yturralde
                             (1896-1978)</span></div>
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Sculpteur</span><span class="lol">Juan Cristóbal
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Sculpteur</span><span>Juan Cristóbal
                             (1898-1961)
                         </span></div>
                 </div>
@@ -192,12 +192,12 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="lg:col-start-2 col-span-12 lg:col-span-5 flex flex-col lg:py-5 overflow-hidden">
                     <div class="w-full" data-scale-up="" data-mask-up="">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_0000_DSCF0454_r.82246ed0.jpg" alt="">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_0000_DSCF0454_r.82246ed0.jpg" alt="">
                     </div>
                 </div>
                 <div class="lg:col-start-8 col-span-12 lg:col-span-5 flex flex-col lg:py-5">
                     <div class="w-full lg:mt-10" data-scroll-up="">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_0002_DSCF0510_t.88abae7d.jpg" alt="">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_0002_DSCF0510_t.88abae7d.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -206,7 +206,7 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="col-start-1 col-span-12 lg:col-span-6 flex flex-col py-5">
-                    <div class="content__title" data-splitting="" data-effect16="">
+                    <div class="fx-split" data-splitting="" data-effect16="">
                         <p class="text-2xl md:text-4xl">
                             Les paroles d’un ornithologue, d’une historienne, de danseurs et des autorités locales
                             traduisent la multiplicité des regards portés sur ce monument insolite.
@@ -221,24 +221,24 @@ var supportsCssVars = function() {
                 <div class="lg:col-start-2 col-span-12 lg:col-span-4 flex flex-col py-5">
                     <div class="w-full lg:mt-10">
                         <div class="text-xl" data-fade-in-text="">
-                            <div class="p-5 bg-light-green text-dark flex flex-col items-center justify-center gap-3 text-fade">
+                            <div class="p-5 bg-light-green text-dark flex flex-col items-center justify-center gap-3 fx-reveal">
                                 <span class="uppercase">Podcast [FR]</span>
                                 <audio controls="" preload="none">
                                     <source src="https://api.nakala.fr/data/10.34847/nkl.febf9r0s/cdf09411e13ad5050be8de078a5f2a9221c32df8?bearer=">
                                     Your browser does not support the audio element.
                                 </audio>
                             </div>
-                            <div class="w-full mt-5 lg:mt-10 text-fade">
-                                <img width="1280" height="1080" class="item-img" src="/5-4_0003_DSCF0515_t.67d5ee31.jpg" alt="">
+                            <div class="w-full mt-5 lg:mt-10 fx-reveal">
+                                <img width="1280" height="1080" src="/5-4_0003_DSCF0515_t.67d5ee31.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="lg:col-start-7 col-span-12 lg:col-span-5 flex flex-col py-5 overflow-hidden" data-fade-in-text="">
                     <div class="lg:w-4/5" data-scale-up="">
-                        <img width="1080" height="1280" loading="lazy" class="item-img" src="/4-5_0000_DSCF0459_p.00597620.jpg" alt="">
+                        <img width="1080" height="1280" loading="lazy" src="/4-5_0000_DSCF0459_p.00597620.jpg" alt="">
                     </div>
-                    <div class="text-xl lg:w-4/5 p-5 mt-5 lg:mt-10 bg-light-green text-dark flex flex-col items-center justify-center gap-3 text-fade">
+                    <div class="text-xl lg:w-4/5 p-5 mt-5 lg:mt-10 bg-light-green text-dark flex flex-col items-center justify-center gap-3 fx-reveal">
                         <span class="uppercase">Podcast [ES]</span>
                         <audio controls="" preload="none">
                             <source src="https://api.nakala.fr/data/10.34847/nkl.b00fngrl/d16b9d40b964ca37b4b8aa1f3b75b3a2659404e0?bearer=">
@@ -253,7 +253,7 @@ var supportsCssVars = function() {
             <div class="w-full">
                 <div class="overflow-hidden">
                     <div class="w-full">
-                        <img width="1920" height="1080" loading="lazy" class="item-img" src="/16-9_0000_DSCF0563.4d4bfdeb.jpg" alt="">
+                        <img width="1920" height="1080" loading="lazy" src="/16-9_0000_DSCF0563.4d4bfdeb.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -263,19 +263,19 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 lg:gap-5" data-lines="">
                 <div class="w-150vw uppercase text-9xl flex gap-x-5" data-marquee-l="">
                     <div class="transform rotate-2 -translate-y-3">
-                        <img width="1280" height="1080" class="item-img w-full" src="/5-4_0003_DSCF0515_t.67d5ee31.jpg" alt="">
+                        <img width="1280" height="1080" class="w-full" src="/5-4_0003_DSCF0515_t.67d5ee31.jpg" alt="">
                     </div>
                     <div class="transform -rotate-1 translate-y-5 translate-x-10">
-                        <img width="1280" height="1080" class="item-img w-full" src="/5-4_0005_P1080887.6448ed28.jpg" alt="">
+                        <img width="1280" height="1080" class="w-full" src="/5-4_0005_P1080887.6448ed28.jpg" alt="">
                     </div>
                     <div class="-rotate-2">
-                        <img width="1280" height="1080" class="item-img w-full opacity-0" src="/5-4_0004_DSCF0563.a5203501.jpg" alt="">
+                        <img width="1280" height="1080" class="w-full opacity-0" src="/5-4_0004_DSCF0563.a5203501.jpg" alt="">
                     </div>
                     <div class="transform -rotate-3 -translate-y-3 translate-x-6">
-                        <img width="1280" height="1080" class="item-img w-full" src="/5-4_0006_Courbes%201.a8f6132d.jpg" alt="">
+                        <img width="1280" height="1080" class="w-full" src="/5-4_0006_Courbes%201.a8f6132d.jpg" alt="">
                     </div>
                     <div class="transform rotate-1 translate-y-4">
-                        <img width="1280" height="1080" class="item-img w-full opacity-0" src="/5-4_0006_Courbes%201.a8f6132d.jpg" alt="">
+                        <img width="1280" height="1080" class="w-full opacity-0" src="/5-4_0006_Courbes%201.a8f6132d.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -285,8 +285,8 @@ var supportsCssVars = function() {
         <div class="mt-10 -pb-10 bg-light-green">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="">
                 <div class="col-start-3 lg:col-start-4 col-span-8 lg:col-span-6 transform translate-y-10" data-fade-in-text="">
-                    <div class="text-fade">
-                        <img width="1080" height="1280" loading="lazy" class="item-img" src="/4-5_0001_DSCF0386_p.9a67dc70.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1080" height="1280" loading="lazy" src="/4-5_0001_DSCF0386_p.9a67dc70.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -298,7 +298,7 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="w-full">
                 <div class="overflow-hidden" data-fade-in-text="">
-                    <span class="opacity-50 uppercase text-fade">Regard artistique</span>
+                    <span class="opacity-50 uppercase fx-reveal">Regard artistique</span>
                 </div>
             </div>
         </div>
@@ -308,43 +308,43 @@ var supportsCssVars = function() {
                 <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
                 <div class="py-5 col-span-12 flex flex-col lg:flex-row">
                     <div class="w-full lg:w-1/2">
-                        <div class="flex flex-col lg:flex-row lg:space-x-2 ">
+                        <div class="flex flex-col lg:flex-row lg:space-x-2">
                             <span class="opacity-50">
                                 Co-réalisation
                             </span>
-                            <span class="lol">
+                            <span>
                                 Anna Chirescu & Florence Pierre
                             </span>
                         </div>
-                        <div class="flex flex-col lg:flex-row lg:space-x-2 ">
+                        <div class="flex flex-col lg:flex-row lg:space-x-2">
                             <span class="opacity-50">
                                 Chorégraphie
                             </span>
-                            <span class="lol">
+                            <span>
                                 Anna Chirescu</span>
                         </div>
-                        <div class="flex flex-col lg:flex-row lg:space-x-2 ">
+                        <div class="flex flex-col lg:flex-row lg:space-x-2">
                             <span class="opacity-50">
                                 Montage et stylisme
                             </span>
-                            <span class="lol">
+                            <span>
                                 Florence Pierre
                             </span>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2">
-                        <div class="flex flex-col lg:flex-row lg:space-x-2 ">
+                        <div class="flex flex-col lg:flex-row lg:space-x-2">
                             <span class="opacity-50">
                                 Images et musique
                             </span>
-                            <span class="lol">
+                            <span>
                                 Gordon Spooner
                             </span>
                         </div>
-                        <div class="flex flex-col lg:flex-row lg:space-x-2 "><span class="opacity-50">
+                        <div class="flex flex-col lg:flex-row lg:space-x-2"><span class="opacity-50">
                                 Danseur.euses
                             </span>
-                            <span class="lol">
+                            <span>
                                 Anna Chirescu, Catarina Pernao, Carlo Schiavo, Miguel De Sousa
                             </span>
                         </div>
@@ -358,10 +358,10 @@ var supportsCssVars = function() {
         <div class="py-10 px-5">
             <div class="grid grid-cols-12">
                 <div class="ccol-start-1 col-span-12 md:col-start-3 md:col-span-8 flex flex-col gap-y-5">
-                    <div class="video" style="background-color: #000">
+                    <div class="video-frame" style="background-color: #000">
                         <iframe title="Vidéo – Barrage et centrale hydroélectrique d’El Salto" loading="lazy" src="https://www.canal-u.tv/chaines/invisu/embed/179527" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
                     </div>
-                    <div class="mt-5 content__title" data-splitting="" data-effect16="">
+                    <div class="mt-5 fx-split" data-splitting="" data-effect16="">
                         <p class="text-2xl md:text-4xl">
                             Le projet artistique Noria de la chorégraphe et danseuse Anna Chirescu s’inspire des
                             machines hydrauliques successivement installées à El Carpio, des premières grandes norias au
@@ -381,7 +381,7 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="w-full">
                 <div class="overflow-hidden" data-fade-in-text="">
-                    <span class="opacity-50 uppercase text-fade">Bâtiment suivant</span>
+                    <span class="opacity-50 uppercase fx-reveal">Bâtiment suivant</span>
                 </div>
             </div>
         </div>
@@ -391,22 +391,22 @@ var supportsCssVars = function() {
         </div>
 
 
-        <div class="bat-list p-5" data-fade-in-text="">
+        <div class="building-list p-5" data-fade-in-text="">
             <a href="/02-ecole-sarajevo.html">
                 <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                     <div class="col-span-12 grid grid-cols-12 gap-y-5 lg:gap-5 py-5">
-                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-fade">
+                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl fx-reveal">
                             <h2>
                                 École de droit de Sarajevo
                             </h2>
                         </div>
-                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Lieu</span>
-                            <span class="lol">Sarajevo, Bosnie</span>
+                        <div class="col-span-6 md:col-span-3 flex flex-col fx-reveal"><span class="opacity-50">Lieu</span>
+                            <span>Sarajevo, Bosnie</span>
                         </div>
-                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Inauguration</span>
-                            <span class="lol">1887</span>
+                        <div class="col-span-6 md:col-span-3 flex flex-col fx-reveal"><span class="opacity-50">Inauguration</span>
+                            <span>1887</span>
                         </div>
-                        <div class="hidden md:flex arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
+                        <div class="hidden md:flex building-list__arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
                             <span>→</span>
                         </div>
                     </div>
@@ -417,7 +417,7 @@ var supportsCssVars = function() {
         <div class="mt-10 bg-yellow text-dark px-5 py-2 mb-1">
             <div class="grid grid-cols-12" data-lines="">
                 <div class="col-span-12 lg:col-span-6 flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <p>Retrouvez tous les contenus et toutes les données sur le
                             <a class="text-dark hover:opacity-60 hover:text-dark border-b" href="https://imaneo-data.inha.fr">site
                                 archives ↗</a>
@@ -425,14 +425,14 @@ var supportsCssVars = function() {
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-6 lg:justify-end flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/mentions-legales.html">Mentions
                             Légales</a>
                     </div>
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/credits.html">Crédits</a>
                     </div>
-                    <div class="">
+                    <div>
                         <p>Accessibilité : partiellement conforme</p>
                     </div>
                 </div>

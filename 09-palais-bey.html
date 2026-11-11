@@ -22,45 +22,45 @@ var supportsCssVars = function() {
 </script>
 </head>
 
-<body class="demo-2 antialiased loading">
-    <main class="transition-container">
+<body class="antialiased is-loading">
+    <main class="page">
 
-        <nav class="text-sm fixed w-full navbar-bg">
+        <nav class="text-sm fixed w-full site-nav">
             <div class="p-5 w-full">
                 <div class="flex w-full">
                     <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
-                        <div class="text-fade">
+                        <div class="fx-reveal">
                             <!-- Website Logo -->
-                            <a href="/index.html" class="navlink flex items-center">
+                            <a href="/index.html" class="nav-link flex items-center">
                                 <img width="2410" height="2301" src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
                             </a>
                         </div>
                         <!-- Primary Navbar items -->
                         <div class="hidden md:flex space-x-4 items-center">
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/batiments.html" class="nav-link">Bâtiments</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/films-thema.html" class="nav-link">Films Thématiques</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/a-propos.html" class="nav-link">À Propos</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade flex items-center">
-                                    <a href="https://imaneo-data.inha.fr" class="navlink">
+                                <div class="fx-reveal flex items-center">
+                                    <a href="https://imaneo-data.inha.fr" class="nav-link">
                                         <button class="marquee-btn" type="button">
                                             <span>Tous les contenus et données - All the data and ressources - Todo el
                                                 contenido y
@@ -79,32 +79,32 @@ var supportsCssVars = function() {
                     </div>
                     <!-- Mobile menu button -->
                     <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                        <button class="nav-mobile__toggle text-base uppercase py-2 pl-2">
                             Menu
                         </button>
                     </div>
                 </div>
             </div>
             <!-- mobile menu -->
-            <div class="hidden mobile-menu">
+            <div class="hidden nav-mobile">
                 <div class="p-5 flex flex-col items-center align-middle space-y-6 text-2xl">
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/batiments.html">Bâtiments</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/batiments.html">Bâtiments</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/films-thema.html">Films Thématiques</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/films-thema.html">Films Thématiques</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/a-propos.html">À Propos</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/a-propos.html">À Propos</a>
                         </button>
                     </div>
                     <div class="flex">
-                        <a href="https://imaneo-data.inha.fr" class="navlink navlink mr-2">
+                        <a href="https://imaneo-data.inha.fr" class="nav-link nav-link mr-2">
                             <button class="marquee-btn h-7" type="button">
                                 <span>Tous les contenus et données - All the data and ressources - Todo el
                                     contenido y
@@ -125,24 +125,24 @@ var supportsCssVars = function() {
                 <div class="h-10 md:h-5"></div>
                 <div class="text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl flex flex-col uppercase">
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             Palais du bey
                         </div>
                     </div>
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             d'Oran
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-8 gap-y-5 lg:gap-5">
                     <div class="col-span-8 md:col-span-6 lg:col-span-5">
-                        <div class="shape w-5 h-5 mb-3">
-                            <div class="text-fade">
+                        <div class="building-card__shape w-5 h-5 mb-3">
+                            <div class="fx-reveal">
                                 <img src="/Property%201=9.99e9d354.svg">
                             </div>
                         </div>
-                        <p class="text-base md:text-xl content__title text-fade">
+                        <p class="text-base md:text-xl fx-split fx-reveal">
                             Le palais du bey est l’un des rares vestiges de la période ottomane (1792-1831) à Oran.
                             Niché au cœur de la citadelle de Rosalcazar édifiée par les Espagnols entre les XVIe et
                             XVIIIe siècles, il fut dès le début de l’occupation française en 1831 accaparé par l’armée
@@ -151,8 +151,8 @@ var supportsCssVars = function() {
                     </div>
                 </div>
             </div>
-            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end container_big_img item-img">
-                <img width="874" height="1092" class="w-full content__title text-fade" src="/09_bat-featured_palais-bey.4ef1b934.jpg" alt="image principale du batiment">
+            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end">
+                <img width="874" height="1092" class="w-full fx-split fx-reveal" src="/09_bat-featured_palais-bey.4ef1b934.jpg" alt="image principale du batiment">
             </div>
         </div>
 
@@ -160,11 +160,11 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="">
                 <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
                 <div class="col-span-12 grid grid-cols-12 gap-y-5 lg:gap-5">
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span class="lol">Oran, Algérie</span></div>
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span class="lol">Fin XVIIIe-XIXe siècles</span></div>
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span class="lol">Inconnu</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span>Oran, Algérie</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span>Fin XVIIIe-XIXe siècles</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span>Inconnu</span></div>
                     <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Auteur
-                            des inscriptions du décor</span><span class="lol">Edmond Combarel
+                            des inscriptions du décor</span><span>Edmond Combarel
                             (1817-1869)
                         </span></div>
                 </div>
@@ -176,17 +176,17 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="col-span-12 lg:col-span-4 flex flex-col overflow-hidden">
                     <div class="w-full">
-                        <img width="1080" height="1280" loading="lazy" class="item-img" src="/4-5_0000_asset%2020.8570c5f1.jpg" alt="">
+                        <img width="1080" height="1280" loading="lazy" src="/4-5_0000_asset%2020.8570c5f1.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-4 flex flex-col overflow-hidden">
                     <div class="w-full">
-                        <img width="1080" height="1280" loading="lazy" class="item-img" src="/4-5_0002_asset%2010.8c9e31d9.jpg" alt="">
+                        <img width="1080" height="1280" loading="lazy" src="/4-5_0002_asset%2010.8c9e31d9.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-4 flex flex-col overflow-hidden">
                     <div class="w-full">
-                        <img width="1080" height="1280" loading="lazy" class="item-img" src="/4-5_0001_asset%2016.2a0a7899.jpg" alt="">
+                        <img width="1080" height="1280" loading="lazy" src="/4-5_0001_asset%2016.2a0a7899.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="lg:col-start-3 xl:col-start-4 col-span-12 lg:col-span-8 xl:col-span-6 flex flex-col py-10 overflow-hidden" data-fade-in-text="">
-                    <div class="content__title" data-splitting="" data-effect16="">
+                    <div class="fx-split" data-splitting="" data-effect16="">
                         <p class="text-2xl md:text-3xl text-center">
                             « Il faut absolument refaire toute la décoration du salon, percer de nouvelles portes et de
                             nouvelles croisées afin de les placer dans des positions symétriques, ménager des panneaux
@@ -203,7 +203,7 @@ var supportsCssVars = function() {
                             la construction. »
                         </p>
                     </div>
-                    <p class="mt-5 lg:mt-7 text-fade text-center">
+                    <p class="mt-5 lg:mt-7 fx-reveal text-center">
                         Le Chef du génie à Oran, 1854
                     </p>
                 </div>
@@ -214,8 +214,8 @@ var supportsCssVars = function() {
         <div class="-pb-10 bg-yellow mb-10">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="">
                 <div class="col-start-3 lg:col-start-4 col-span-8 lg:col-span-6 transform translate-y-10" data-fade-in-text="">
-                    <div class="text-fade">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_0000s_0000_asset%2022.3295fc93.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_0000s_0000_asset%2022.3295fc93.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -227,15 +227,15 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="lg:col-start-2 col-span-12 lg:col-span-3 flex flex-col gap-y-5 lg:gap-5 lg:py-5">
                     <div class="w-full">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_0000s_0001_asset%2015.af7c3a4c.jpg" alt="">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_0000s_0001_asset%2015.af7c3a4c.jpg" alt="">
                     </div>
                     <div class="lg:w-3/4 lg:transform lg:translate-x-3/4 lg:-translate-y-6" data-scale-up="">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_0000s_0002_asset%2014.6b04fa66.jpg" alt="">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_0000s_0002_asset%2014.6b04fa66.jpg" alt="">
                     </div>
                 </div>
                 <div class="lg:col-start-8 col-span-12 lg:col-span-4 flex flex-col lg:py-5">
                     <div class="w-full lg:mt-10" data-scroll-up="">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_0000s_0003_asset%2013.84e26fd8.jpg" alt="">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_0000s_0003_asset%2013.84e26fd8.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -245,7 +245,7 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col py-10">
                     <div class="text-xl" data-fade-in-text="">
-                        <div class="p-5 bg-yellow text-dark flex flex-col items-center justify-center gap-3 text-fade">
+                        <div class="p-5 bg-yellow text-dark flex flex-col items-center justify-center gap-3 fx-reveal">
                             <span class="uppercase">Podcast</span>
                             <audio controls="" preload="none">
                                 <source src="https://api.nakala.fr/data/10.34847/nkl.6512rtju/1646572fb7c5092eddaec7886c85cbf63424f192?bearer=">
@@ -253,7 +253,7 @@ var supportsCssVars = function() {
                             </audio>
                         </div>
                     </div>
-                    <div class="content__title mt-5" data-splitting="" data-effect16="">
+                    <div class="fx-split mt-5" data-splitting="" data-effect16="">
                         <p class="text-2xl md:text-4xl">
                             Des jeunes oranais, en visite au palais, nous font part de leurs impressions devant des
                             inscriptions en arabe du grand salon à la gloire de Napoléon III.
@@ -276,7 +276,7 @@ var supportsCssVars = function() {
             <div class="w-full">
                 <div class="overflow-hidden">
                     <div class="w-full">
-                        <img width="1920" height="1080" loading="lazy" class="item-img" src="/16-9_palais-bey.cdea28d0.jpg" alt="">
+                        <img width="1920" height="1080" loading="lazy" src="/16-9_palais-bey.cdea28d0.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -285,13 +285,13 @@ var supportsCssVars = function() {
         <div class="p-5 lg:pt-10" data-fade-in-text="">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="col-span-12 lg:col-span-4 flex flex-col lg:py-10 overflow-hidden">
-                    <div class="w-full text-fade" data-scroll-up="">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_0000s_0004_asset%2012.f39c4d38.jpg" alt="">
+                    <div class="w-full fx-reveal" data-scroll-up="">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_0000s_0004_asset%2012.f39c4d38.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-start-7 lg:col-span-6 flex flex-col lg:py-10">
-                    <div class="w-full text-fade">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_0000s_0005_asset%2011.29d438c9.jpg" alt="">
+                    <div class="w-full fx-reveal">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_0000s_0005_asset%2011.29d438c9.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -300,7 +300,7 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="w-full pt-10">
                 <div class="overflow-hidden" data-fade-in-text="">
-                    <span class="opacity-50 uppercase text-fade">Histoire</span>
+                    <span class="opacity-50 uppercase fx-reveal">Histoire</span>
                 </div>
             </div>
         </div>
@@ -314,20 +314,20 @@ var supportsCssVars = function() {
         <div class="pt-5 w-100vw overflow-hidden">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="" data-fade-in-text="">
                 <div class="w-150vw uppercase flex gap-x-5" data-marquee-l="">
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0000_Oran_palais%20Bey_Salon.91b7a93e.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0000_Oran_palais%20Bey_Salon.91b7a93e.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0001_Oran_Caserne%20Chateau%20neuf_1911-1913.ba53e436.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0001_Oran_Caserne%20Chateau%20neuf_1911-1913.ba53e436.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0002_Berbrugger_1843_Etat%201831_grde%20cour.962732af.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0002_Berbrugger_1843_Etat%201831_grde%20cour.962732af.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0003_Oran-cour-L'Illustration.a42e3dc5.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0003_Oran-cour-L'Illustration.a42e3dc5.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0000_Oran_palais%20Bey_Salon.91b7a93e.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0000_Oran_palais%20Bey_Salon.91b7a93e.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -337,20 +337,20 @@ var supportsCssVars = function() {
         <div class="pt-5 w-100vw overflow-hidden">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="" data-fade-in-text="">
                 <div class="w-150vw uppercase text-9xl flex gap-x-5" data-marquee-r="">
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0004_Oran_pergola%20pavillon%20palais_1911.dc11cf53.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0004_Oran_pergola%20pavillon%20palais_1911.dc11cf53.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0005_Oran_palais%20Bey_Salon_1865.90b69d8f.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0005_Oran_palais%20Bey_Salon_1865.90b69d8f.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0006_Oran_palais%20Bey_salon%20vers%201945_paroi%20fond%20Est.86557d37.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0006_Oran_palais%20Bey_salon%20vers%201945_paroi%20fond%20Est.86557d37.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0007_Oran_Chateau%20neuf_photo.1b0559f9.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0007_Oran_Chateau%20neuf_photo.1b0559f9.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0004_Oran_pergola%20pavillon%20palais_1911.dc11cf53.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0004_Oran_pergola%20pavillon%20palais_1911.dc11cf53.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -359,20 +359,20 @@ var supportsCssVars = function() {
         <div class="pt-5 w-100vw overflow-hidden">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="" data-fade-in-text="">
                 <div class="w-150vw uppercase flex gap-x-5" data-marquee-l="">
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0008_Oran_Chateau%20neuf_Palais%20bey.ff564bac.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0008_Oran_Chateau%20neuf_Palais%20bey.ff564bac.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0009_Oran_Chateau%20neuf_Palais%20bey_tampon%201910.48cd70b7.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0009_Oran_Chateau%20neuf_Palais%20bey_tampon%201910.48cd70b7.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0011_oran_chateau%20neuf_entree_date%201921.8e6cb2c2.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0011_oran_chateau%20neuf_entree_date%201921.8e6cb2c2.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0012_Oran_Chateau%20neuf_date%201915.47dae6e5.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0012_Oran_Chateau%20neuf_date%201915.47dae6e5.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0008_Oran_Chateau%20neuf_Palais%20bey.ff564bac.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0008_Oran_Chateau%20neuf_Palais%20bey.ff564bac.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -381,20 +381,20 @@ var supportsCssVars = function() {
         <div class="pt-5 pb-10 w-100vw overflow-hidden">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="" data-fade-in-text="">
                 <div class="w-150vw uppercase text-9xl flex gap-x-5" data-marquee-r="">
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0013_Oran_Chateau%20neuf_caserne%202.09f245e2.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0013_Oran_Chateau%20neuf_caserne%202.09f245e2.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0014_Oran_Chateau%20neuf_caserne%201.24850e2c.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0014_Oran_Chateau%20neuf_caserne%201.24850e2c.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0015_Oran_Chateau%20neuf_carte%20postale-annees%201950.39174979.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0015_Oran_Chateau%20neuf_carte%20postale-annees%201950.39174979.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0016_Chateau-neuf_ext_1.781f739a.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0016_Chateau-neuf_ext_1.781f739a.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0005s_0013_Oran_Chateau%20neuf_caserne%202.09f245e2.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0005s_0013_Oran_Chateau%20neuf_caserne%202.09f245e2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -405,7 +405,7 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="w-full">
                 <div class="overflow-hidden" data-fade-in-text="">
-                    <span class="opacity-50 uppercase text-fade">Bâtiment suivant</span>
+                    <span class="opacity-50 uppercase fx-reveal">Bâtiment suivant</span>
                 </div>
             </div>
         </div>
@@ -415,22 +415,22 @@ var supportsCssVars = function() {
         </div>
 
 
-        <div class="bat-list p-5" data-fade-in-text="">
+        <div class="building-list p-5" data-fade-in-text="">
             <a href="/10-synagogue-sarajevo.html">
                 <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                     <div class="col-span-12 grid grid-cols-12 gap-y-5 lg:gap-5 py-5">
-                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-fade">
+                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl fx-reveal">
                             <h2>
                                 Synagogue ashkénaze de Sarajevo
                             </h2>
                         </div>
-                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Lieu</span>
-                            <span class="lol">Sarajevo, Bosnie-Herzégovine</span>
+                        <div class="col-span-6 md:col-span-3 flex flex-col fx-reveal"><span class="opacity-50">Lieu</span>
+                            <span>Sarajevo, Bosnie-Herzégovine</span>
                         </div>
-                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Inauguration</span>
-                            <span class="lol">1902</span>
+                        <div class="col-span-6 md:col-span-3 flex flex-col fx-reveal"><span class="opacity-50">Inauguration</span>
+                            <span>1902</span>
                         </div>
-                        <div class="hidden md:flex arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
+                        <div class="hidden md:flex building-list__arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
                             <span>→</span>
                         </div>
                     </div>
@@ -441,7 +441,7 @@ var supportsCssVars = function() {
         <div class="mt-10 bg-yellow text-dark px-5 py-2 mb-1">
             <div class="grid grid-cols-12" data-lines="">
                 <div class="col-span-12 lg:col-span-6 flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <p>Retrouvez tous les contenus et toutes les données sur le
                             <a class="text-dark hover:opacity-60 hover:text-dark border-b" href="https://imaneo-data.inha.fr">site
                                 archives ↗</a>
@@ -449,14 +449,14 @@ var supportsCssVars = function() {
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-6 lg:justify-end flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/mentions-legales.html">Mentions
                             Légales</a>
                     </div>
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/credits.html">Crédits</a>
                     </div>
-                    <div class="">
+                    <div>
                         <p>Accessibilité : partiellement conforme</p>
                     </div>
                 </div>

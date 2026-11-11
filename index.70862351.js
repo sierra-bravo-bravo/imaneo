@@ -570,7 +570,7 @@ var _splittingDefault = parcelHelpers.interopDefault(_splitting);
 (0, _gsap.gsap).registerPlugin((0, _scrollTrigger.ScrollTrigger));
 (0, _splittingDefault.default)();
 const fx16Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect16]")
+    ...document.querySelectorAll(".fx-split[data-splitting][data-effect16]")
 ];
 const fxLines = [
     ...document.querySelectorAll("[data-lines]")
@@ -582,10 +582,10 @@ const fxMarqueeRight = [
     ...document.querySelectorAll("[data-marquee-r]")
 ];
 const fxFadeTitles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-fadetitles]")
+    ...document.querySelectorAll(".fx-split[data-splitting][data-fadetitles]")
 ];
 const fxFadeTitlesHero = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-fadetitles-hero]")
+    ...document.querySelectorAll(".fx-split[data-splitting][data-fadetitles-hero]")
 ];
 const fxScaleUp = [
     ...document.querySelectorAll("[data-scale-up]")
@@ -597,7 +597,7 @@ const fxFadeIn = [
     ...document.querySelectorAll("[data-fade-in-text]")
 ];
 const fxMaskUp = [
-    ...document.querySelectorAll(".content__title[data-mask-up]")
+    ...document.querySelectorAll(".fx-split[data-mask-up]")
 ];
 // Lenis smooth scrolling
 let lenis;
@@ -677,7 +677,7 @@ const scroll = ()=>{
         });
     });
     fxFadeIn.forEach((title)=>{
-        (0, _gsap.gsap).fromTo(title.querySelectorAll(".text-fade"), {
+        (0, _gsap.gsap).fromTo(title.querySelectorAll(".fx-reveal"), {
             "will-change": "opacity",
             opacity: 0,
             y: 16
@@ -828,21 +828,21 @@ const scroll = ()=>{
 (0, _utils.preloadFonts)("cvn8slu").then(()=>{
     // Remove loader (loading class)
     setTimeout(function() {
-        document.body.classList.remove("loading");
+        document.body.classList.remove("is-loading");
     }, 2000); // Adjust the delay to match your desired timing
-    const transitionContainer = document.querySelector(".transition-container");
+    const transitionContainer = document.querySelector(".page");
     setTimeout(function() {
-        transitionContainer.classList.add("fade-in");
+        transitionContainer.classList.add("is-visible");
         // Lenis (smooth scrolling)
         initSmoothScrolling();
         // GSAP Scroll Triggers
         scroll();
     }, 3000); // Adjust the delay to match your desired timing
-    const links = document.querySelectorAll(".navlink");
+    const links = document.querySelectorAll(".nav-link");
     links.forEach(function(link) {
         link.addEventListener("click", function(event) {
             event.preventDefault();
-            transitionContainer.classList.add("fade-out");
+            transitionContainer.classList.add("is-leaving");
             setTimeout(function() {
                 window.location.href = link.href;
             }, 1000); // Adjust the delay to match the transition duration
@@ -858,12 +858,12 @@ let prevScrollY = window.pageYOffset;
 function handleScroll() {
     const currentScrollY = window.pageYOffset;
     if (currentScrollY > prevScrollY) // Scrolling down, add the fade-out class
-    document.querySelectorAll(".navbar-bg").forEach((element)=>{
-        element.classList.add("fade-out-on-scroll");
+    document.querySelectorAll(".site-nav").forEach((element)=>{
+        element.classList.add("is-nav-hidden");
     });
     else // Scrolling up, remove the fade-out class
-    document.querySelectorAll(".navbar-bg").forEach((element)=>{
-        element.classList.remove("fade-out-on-scroll");
+    document.querySelectorAll(".site-nav").forEach((element)=>{
+        element.classList.remove("is-nav-hidden");
     });
     prevScrollY = currentScrollY;
 }
@@ -879,8 +879,8 @@ document.addEventListener("DOMContentLoaded", function() {
         else progressBar.style.display = "none"; // Hide the progress bar
     });
 });
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
+const btn = document.querySelector("button.nav-mobile__toggle");
+const menu = document.querySelector(".nav-mobile");
 btn.addEventListener("click", ()=>{
     menu.classList.toggle("hidden");
 });
@@ -7816,4 +7816,3 @@ _getGSAP() && gsap.registerPlugin(Observer);
 
 },{}]},["554dW","gTMSd"], "gTMSd", "parcelRequire2524")
 
-//# sourceMappingURL=index.70862351.js.map

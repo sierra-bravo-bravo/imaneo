@@ -26,46 +26,46 @@ var supportsCssVars = function() {
 </script>
 </head>
 
-<body class="demo-2 loading  antialiased">
-    <main class="transition-container">
+<body class="is-loading antialiased">
+    <main class="page">
 
 
-        <nav class="text-sm fixed w-full navbar-bg">
+        <nav class="text-sm fixed w-full site-nav">
             <div class="p-5 w-full">
                 <div class="flex w-full">
                     <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
-                        <div class="text-fade">
+                        <div class="fx-reveal">
                             <!-- Website Logo -->
-                            <a href="/index.html" class="navlink flex items-center">
+                            <a href="/index.html" class="nav-link flex items-center">
                                 <img width="2410" height="2301" src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
                             </a>
                         </div>
                         <!-- Primary Navbar items -->
                         <div class="hidden md:flex space-x-4 items-center">
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/batiments.html" class="nav-link">Bâtiments</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/films-thema.html" class="nav-link">Films Thématiques</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/a-propos.html" class="nav-link">À Propos</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade flex items-center">
-                                    <a href="https://imaneo-data.inha.fr" class="navlink">
+                                <div class="fx-reveal flex items-center">
+                                    <a href="https://imaneo-data.inha.fr" class="nav-link">
                                         <button class="marquee-btn" type="button">
                                             <span>Tous les contenus et données - All the data and ressources - Todo el
                                                 contenido y
@@ -85,32 +85,32 @@ var supportsCssVars = function() {
                     </div>
                     <!-- Mobile menu button -->
                     <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                        <button class="nav-mobile__toggle text-base uppercase py-2 pl-2">
                             Menu
                         </button>
                     </div>
                 </div>
             </div>
             <!-- mobile menu -->
-            <div class="hidden mobile-menu">
+            <div class="hidden nav-mobile">
                 <div class="p-5 flex flex-col items-center align-middle space-y-6 text-2xl">
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/batiments.html">Bâtiments</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/batiments.html">Bâtiments</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/films-thema.html">Films Thématiques</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/films-thema.html">Films Thématiques</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/a-propos.html">À Propos</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/a-propos.html">À Propos</a>
                         </button>
                     </div>
                     <div class="flex">
-                        <a href="https://imaneo-data.inha.fr" class="navlink navlink mr-2">
+                        <a href="https://imaneo-data.inha.fr" class="nav-link nav-link mr-2">
                             <button class="marquee-btn h-7" type="button">
                                 <span>Tous les contenus et données - All the data and ressources - Todo el
                                     contenido y
@@ -131,12 +131,12 @@ var supportsCssVars = function() {
             <div class="col-span-12 flex flex-col justify-between mt-10">
                 <div class="text-4xl md:text-6xl lg:text-7xl xl:text-8xl flex flex-col uppercase items-center">
                     <div class="overflow-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             Le projet
                         </div>
                     </div>
                     <div class="overflow-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             IMANEO
                         </div>
                     </div>
@@ -150,9 +150,9 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="col-span-12 md:col-start-3 md:col-span-8 flex flex-col py-5 lg:pb-10 lg:pt-0">
                     <div class="w-full">
-                        <div class="content__title flex flex-col">
+                        <div class="fx-split flex flex-col">
                             <div data-fade-in-text="">
-                                <p class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 text-fade">
+                                <p class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 fx-reveal">
                                     Imaginaires croisés de l’architecture néo-mauresque, développé
                                     dans le cadre du programme Europe Créative de l’Union européenne, vise à améliorer
                                     l’accès au patrimoine architectural euro-méditerranéen en créant des synergies entre
@@ -163,7 +163,7 @@ var supportsCssVars = function() {
                                 </p>
                             </div>
                             <div data-fade-in-text="">
-                                <p class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 text-fade">
+                                <p class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 fx-reveal">
                                     Il a été conduit de décembre 2020 à mai 2023 par cinq institutions partenaires : la
                                     Universidad Complutense de Madrid (Espagne), l’Institut national du patrimoine de
                                     Tunis (Tunisie), l’ONG Cultural Heritage without Borders de Sarajevo
@@ -172,7 +172,7 @@ var supportsCssVars = function() {
                                 </p>
                             </div>
                             <div data-fade-in-text="">
-                                <div class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 text-fade">
+                                <div class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 fx-reveal">
                                     Le terrain retenu par IMANEO est celui de l’architecture néo-mauresque construite
                                     entre la fin du XIXe siècle et les années 1930 en Europe et au-delà. Autrefois
                                     instrument des politiques coloniales et impériales européennes, elle est aujourd’hui
@@ -181,7 +181,7 @@ var supportsCssVars = function() {
                                 </div>
                             </div>
                             <div data-fade-in-text="">
-                                <div class=" text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 text-fade">
+                                <div class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 fx-reveal">
                                     Architecture à première vue dissonante, devenue dans
                                     les faits patrimoine commun, elle recèle un fort potentiel de dialogue interculturel
                                     qu’IMANEO propose d’explorer. Au sein d’un partenariat élargi à l’échelle
@@ -192,7 +192,7 @@ var supportsCssVars = function() {
                                 </div>
                             </div>
                             <div data-fade-in-text="">
-                                <div class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 text-fade">
+                                <div class="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-10 fx-reveal">
                                     Le projet a été organisé autour de trois activités principales conduites
                                     collectivement par les membres du consortium : la transmission de la connaissance
                                     historique du patrimoine néo-mauresque ; la construction de nouveaux récits
@@ -210,7 +210,7 @@ var supportsCssVars = function() {
         <div class="mt-10 bg-yellow text-dark px-5 py-2 mb-1">
             <div class="grid grid-cols-12" data-lines="">
                 <div class="col-span-12 lg:col-span-6 flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <p>Retrouvez tous les contenus et toutes les données sur le
                             <a class="text-dark hover:opacity-60 hover:text-dark border-b" href="https://imaneo-data.inha.fr">site
                                 archives ↗</a>
@@ -218,14 +218,14 @@ var supportsCssVars = function() {
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-6 lg:justify-end flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/mentions-legales.html">Mentions
                             Légales</a>
                     </div>
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/credits.html">Crédits</a>
                     </div>
-                    <div class="">
+                    <div>
                         <p>Accessibilité : partiellement conforme</p>
                     </div>
                 </div>

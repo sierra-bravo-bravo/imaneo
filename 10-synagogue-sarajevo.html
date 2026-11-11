@@ -22,45 +22,45 @@ var supportsCssVars = function() {
 </script>
 </head>
 
-<body class="demo-2 antialiased loading">
-    <main class="transition-container">
+<body class="antialiased is-loading">
+    <main class="page">
 
-        <nav class="text-sm fixed w-full navbar-bg">
+        <nav class="text-sm fixed w-full site-nav">
             <div class="p-5 w-full">
                 <div class="flex w-full">
                     <div class="flex justify-between space-x-7 w-full" data-fade-in-text="">
-                        <div class="text-fade">
+                        <div class="fx-reveal">
                             <!-- Website Logo -->
-                            <a href="/index.html" class="navlink flex items-center">
+                            <a href="/index.html" class="nav-link flex items-center">
                                 <img width="2410" height="2301" src="/logo-imaneo-2021-BLANC.11bd5c08.png" alt="Logo" class="w-6 mr-2">
                             </a>
                         </div>
                         <!-- Primary Navbar items -->
                         <div class="hidden md:flex space-x-4 items-center">
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/batiments.html" class="navlink">Bâtiments</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/batiments.html" class="nav-link">Bâtiments</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/films-thema.html" class="navlink">Films Thématiques</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/films-thema.html" class="nav-link">Films Thématiques</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade">
-                                    <button class="menu-link oh unbutton">
-                                        <a href="/a-propos.html" class="navlink">À Propos</a>
+                                <div class="fx-reveal">
+                                    <button class="nav-menu-link btn-reset">
+                                        <a href="/a-propos.html" class="nav-link">À Propos</a>
                                     </button>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
-                                <div class="text-fade flex items-center">
-                                    <a href="https://imaneo-data.inha.fr" class="navlink">
+                                <div class="fx-reveal flex items-center">
+                                    <a href="https://imaneo-data.inha.fr" class="nav-link">
                                         <button class="marquee-btn" type="button">
                                             <span>Tous les contenus et données - All the data and ressources - Todo el
                                                 contenido y
@@ -80,32 +80,32 @@ var supportsCssVars = function() {
                     </div>
                     <!-- Mobile menu button -->
                     <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button text-base uppercase py-2 pl-2">
+                        <button class="nav-mobile__toggle text-base uppercase py-2 pl-2">
                             Menu
                         </button>
                     </div>
                 </div>
             </div>
             <!-- mobile menu -->
-            <div class="hidden mobile-menu">
+            <div class="hidden nav-mobile">
                 <div class="p-5 flex flex-col items-center align-middle space-y-6 text-2xl">
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/batiments.html">Bâtiments</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/batiments.html">Bâtiments</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/films-thema.html">Films Thématiques</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/films-thema.html">Films Thématiques</a>
                         </button>
                     </div>
                     <div>
-                        <button class="menu-link oh unbutton">
-                            <a class="" href="/a-propos.html">À Propos</a>
+                        <button class="nav-menu-link btn-reset">
+                            <a href="/a-propos.html">À Propos</a>
                         </button>
                     </div>
                     <div class="flex">
-                        <a href="https://imaneo-data.inha.fr" class="navlink navlink mr-2">
+                        <a href="https://imaneo-data.inha.fr" class="nav-link nav-link mr-2">
                             <button class="marquee-btn h-7" type="button">
                                 <span>Tous les contenus et données - All the data and ressources - Todo el
                                     contenido y
@@ -126,29 +126,29 @@ var supportsCssVars = function() {
                 <div class="h-10 md:h-5"></div>
                 <div class="text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl flex flex-col uppercase">
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             Synagogue
                         </div>
                     </div>
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             ashkénaze de
                         </div>
                     </div>
                     <div class="overflow-y-hidden">
-                        <div class="content__title" data-splitting="" data-fadetitles="">
+                        <div class="fx-split" data-splitting="" data-fadetitles="">
                             Sarajevo
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-8 gap-y-5 lg:gap-5">
                     <div class="col-span-8 md:col-span-6 lg:col-span-5">
-                        <div class="shape w-5 h-5 mb-3">
-                            <div class="text-fade">
+                        <div class="building-card__shape w-5 h-5 mb-3">
+                            <div class="fx-reveal">
                                 <img src="/Property%201=11.da7c8607.svg">
                             </div>
                         </div>
-                        <p class="text-base md:text-xl content__title text-fade">
+                        <p class="text-base md:text-xl fx-split fx-reveal">
                             Construite par la communauté juive ashkénaze austro-hongroise installée en Bosnie après
                             1878, la synagogue de Sarajevo présente une forme originale qui puise son inspiration tant
                             dans l’architecture mamelouke d’Égypte que dans celle des palais nasrides d’al-Andalous.
@@ -156,8 +156,8 @@ var supportsCssVars = function() {
                     </div>
                 </div>
             </div>
-            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end container_big_img item-img">
-                <img width="874" height="1092" class="w-full content__title text-fade" src="/10_bat-featured_synagogue-sarajevo.1e0cb20c.jpg" alt="image principale du batiment">
+            <div class="col-span-12 lg:col-span-4 flex flex-col justify-end">
+                <img width="874" height="1092" class="w-full fx-split fx-reveal" src="/10_bat-featured_synagogue-sarajevo.1e0cb20c.jpg" alt="image principale du batiment">
             </div>
         </div>
 
@@ -165,12 +165,12 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="">
                 <div class="line col-span-12 h-px bg-grey-50 opacity-50"></div>
                 <div class="col-span-12 grid grid-cols-12 gap-y-5 lg:gap-5">
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span class="lol">Sarajevo, Bosnie-Herzégovine</span></div>
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span class="lol">1902</span></div>
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span class="lol">Wilhelm Stiassny (1842-1910), Karel
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Lieu</span><span>Sarajevo, Bosnie-Herzégovine</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Inauguration</span><span>1902</span></div>
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Architecte</span><span>Wilhelm Stiassny (1842-1910), Karel
                             Pařik (1857-1942)
                         </span></div>
-                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Décorateur</span><span class="lol">Ludwig Oisner
+                    <div class="col-span-12 md:col-span-3 flex flex-col py-1 md:py-5"><span class="opacity-50">Décorateur</span><span>Ludwig Oisner
                             (s. d.)
                         </span></div>
                 </div>
@@ -182,13 +182,13 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="lg:col-start-2 col-span-12 lg:col-span-4 flex flex-col lg:py-5 overflow-hidden">
                     <div class="w-full" data-scale-up="">
-                        <img width="1080" height="1280" loading="lazy" class="item-img" src="/4-5_0000_asset%2021.3a7054f3.jpg" alt="">
+                        <img width="1080" height="1280" loading="lazy" src="/4-5_0000_asset%2021.3a7054f3.jpg" alt="">
                     </div>
                 </div>
                 <div class="lg:col-start-8 col-span-12 lg:col-span-4 flex flex-col lg:py-5">
                     <div class="lg:h-10"></div>
                     <div class="w-full lg:mt-10" data-scroll-up="">
-                        <img width="1280" height="1080" loading="lazy" class="item-img" src="/5-4_synagogue-sarajevo.651eef80.jpg" alt="">
+                        <img width="1280" height="1080" loading="lazy" src="/5-4_synagogue-sarajevo.651eef80.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -197,13 +197,13 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="lg:col-start-2 xl:col-start-3 2xl:col-start-4 col-span-12 lg:col-span-8 xl:col-span-8 2xl:col-span-6 flex flex-col py-5 overflow-hidden" data-fade-in-text="">
-                    <div class="content__title" data-splitting="" data-effect16="">
+                    <div class="fx-split" data-splitting="" data-effect16="">
                         <p class="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center">
                             « The ceiling and the chandelier itself, resembles a view inside a kaleidoscope. It helps me
                             achieve that spiritual state with responsibility to lead the congregation. »
                         </p>
                     </div>
-                    <p class="mt-5 lg:mt-7 text-fade text-center">
+                    <p class="mt-5 lg:mt-7 fx-reveal text-center">
                         Igor Kožemjakin , rabbin, 2022
                     </p>
                 </div>
@@ -214,13 +214,13 @@ var supportsCssVars = function() {
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="lg:col-start-1 col-span-12 lg:col-span-6 flex flex-col overflow-hidden">
                     <div class="w-full">
-                        <img width="1080" height="1280" loading="lazy" class="item-img" src="/4-5_0002_asset%2012.f5ad48ee.jpg" alt="">
+                        <img width="1080" height="1280" loading="lazy" src="/4-5_0002_asset%2012.f5ad48ee.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="lg:col-start-7 col-span-12 lg:col-span-6 bg-light flex items-center justify-center">
                     <div class="lg:w-3/4 overflow-hidden">
-                        <img width="1080" height="1280" loading="lazy" class="item-img" src="/4-5_0001_asset%2018.16b07a60.jpg" alt="" data-scale-up="" data-mask-up="">
+                        <img width="1080" height="1280" loading="lazy" src="/4-5_0001_asset%2018.16b07a60.jpg" alt="" data-scale-up="" data-mask-up="">
                     </div>
                 </div>
             </div>
@@ -229,7 +229,7 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                 <div class="lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col py-10">
-                    <div class="content__title mt-5" data-splitting="" data-effect16="">
+                    <div class="fx-split mt-5" data-splitting="" data-effect16="">
                         <p class="text-2xl md:text-4xl">
                             Des membres de la communauté juive de Sarajevo nous parlent de ce que représente aujourd’hui
                             pour eux cet édifice.
@@ -259,17 +259,17 @@ var supportsCssVars = function() {
             <div class="w-full">
                 <div class="overflow-hidden">
                     <div class="w-full">
-                        <img width="1920" height="1080" loading="lazy" class="item-img" src="/16-9_synagigue-sarajevo.2f2659dd.jpg" alt="">
+                        <img width="1920" height="1080" loading="lazy" src="/16-9_synagigue-sarajevo.2f2659dd.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div class=" p-5 mt-10">
+        <div class="p-5 mt-10">
             <div class="w-full">
                 <div class="overflow-hidden" data-fade-in-text="">
-                    <span class="opacity-50 uppercase text-fade">Histoire</span>
+                    <span class="opacity-50 uppercase fx-reveal">Histoire</span>
                 </div>
             </div>
         </div>
@@ -283,20 +283,20 @@ var supportsCssVars = function() {
         <div class="p-5 w-100vw overflow-x-hidden">
             <div class="grid grid-cols-12 gap-y-5 lg:gap-5" data-lines="" data-fade-in-text="">
                 <div class="w-150vw uppercase flex gap-x-5" data-marquee-l="">
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0004s_0000_fortepan_120436.42b81917.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0004s_0000_fortepan_120436.42b81917.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0004s_0001_F-263-%20SINAGOGA.c3c3c03d.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0004s_0001_F-263-%20SINAGOGA.c3c3c03d.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0004s_0002_A001545_MAK.8186c359.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0004s_0002_A001545_MAK.8186c359.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0004s_0003_A001541_MAK.385c94d7.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0004s_0003_A001541_MAK.385c94d7.jpg" alt="">
                     </div>
-                    <div class="text-fade">
-                        <img width="1280" height="800" class="item-img opacity-90 w-full" src="/histoire_0004s_0000_fortepan_120436.42b81917.jpg" alt="">
+                    <div class="fx-reveal">
+                        <img width="1280" height="800" class="opacity-90 w-full" src="/histoire_0004s_0000_fortepan_120436.42b81917.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -307,7 +307,7 @@ var supportsCssVars = function() {
         <div class="p-5">
             <div class="w-full">
                 <div class="overflow-hidden" data-fade-in-text="">
-                    <span class="opacity-50 uppercase text-fade">Bâtiment suivant</span>
+                    <span class="opacity-50 uppercase fx-reveal">Bâtiment suivant</span>
                 </div>
             </div>
         </div>
@@ -317,22 +317,22 @@ var supportsCssVars = function() {
         </div>
 
 
-        <div class="bat-list p-5" data-fade-in-text="">
+        <div class="building-list p-5" data-fade-in-text="">
             <a href="/11-synagogue-chalons.html">
                 <div class="grid grid-cols-12 gap-y-5 lg:gap-5">
                     <div class="col-span-12 grid grid-cols-12 gap-y-5 lg:gap-5 py-5">
-                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-fade">
+                        <div class="col-span-12 flex items-center text-4xl md:text-5xl lg:text-7xl xl:text-8xl fx-reveal">
                             <h2>
                                 Synagogue de Châlons-en-Champagne
                             </h2>
                         </div>
-                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Lieu</span>
-                            <span class="lol">Châlons-en-Champagne, France</span>
+                        <div class="col-span-6 md:col-span-3 flex flex-col fx-reveal"><span class="opacity-50">Lieu</span>
+                            <span>Châlons-en-Champagne, France</span>
                         </div>
-                        <div class="col-span-6 md:col-span-3 flex flex-col text-fade"><span class="opacity-50">Inauguration</span>
-                            <span class="lol">1875</span>
+                        <div class="col-span-6 md:col-span-3 flex flex-col fx-reveal"><span class="opacity-50">Inauguration</span>
+                            <span>1875</span>
                         </div>
-                        <div class="hidden md:flex arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
+                        <div class="hidden md:flex building-list__arrow col-start-10 col-span-3 justify-end items-end text-3xl md:text-4xl lg:text-5xl xl:text-6xl h-6">
                             <span>→</span>
                         </div>
                     </div>
@@ -343,7 +343,7 @@ var supportsCssVars = function() {
         <div class="mt-10 bg-yellow text-dark px-5 py-2 mb-1">
             <div class="grid grid-cols-12" data-lines="">
                 <div class="col-span-12 lg:col-span-6 flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <p>Retrouvez tous les contenus et toutes les données sur le
                             <a class="text-dark hover:opacity-60 hover:text-dark border-b" href="https://imaneo-data.inha.fr">site
                                 archives ↗</a>
@@ -351,14 +351,14 @@ var supportsCssVars = function() {
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-6 lg:justify-end flex flex-col lg:flex-row gap-2" data-fade-in-text="">
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/mentions-legales.html">Mentions
                             Légales</a>
                     </div>
-                    <div class="">
+                    <div>
                         <a class="text-dark hover:opacity-60 hover:text-dark" href="/credits.html">Crédits</a>
                     </div>
-                    <div class="">
+                    <div>
                         <p>Accessibilité : partiellement conforme</p>
                     </div>
                 </div>
