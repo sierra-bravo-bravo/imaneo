@@ -850,6 +850,19 @@ const scroll = ()=>{
     initSmoothScrolling();
     // GSAP Scroll Triggers
     scroll();
+    // Liens ancres du sommaire (défilement fluide via Lenis)
+    document.querySelectorAll(".toc-link").forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            const target = document.querySelector(link.getAttribute("href"));
+            if (!target) return;
+            event.preventDefault();
+            history.replaceState(null, "", link.getAttribute("href"));
+            if (lenis) lenis.scrollTo(target, {
+                offset: -80
+            });
+            else target.scrollIntoView();
+        });
+    });
 });
 // JavaScript
 let prevScrollY = window.pageYOffset;

@@ -1736,3 +1736,31 @@ main {
     scroll-behavior: auto !important;
   }
 }
+
+/* Sommaire des films thématiques : liens ancres */
+[id^="theme-"] {
+  scroll-margin-top: 5rem;
+}
+
+.toc-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.toc-link:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (hover: hover) {
+  .toc-link > span:last-child {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .toc-link:hover > span:last-child {
+    text-decoration-color: currentColor;
+  }
+}
