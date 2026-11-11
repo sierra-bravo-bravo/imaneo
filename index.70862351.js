@@ -824,6 +824,17 @@ const scroll = ()=>{
         });
     });
 };
+// Typographie : pas d'orpheline (dernier mot collé au précédent) ni de ponctuation seule en début de ligne
+document.querySelectorAll("p, li, figcaption, .toc-link > span:last-child").forEach(function(el) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let node, last = null;
+    while(node = walker.nextNode()){
+        // Espace insécable avant ? : ; ! » et après «
+        node.data = node.data.replace(/\s+([?!:;»])/g, "\u00A0$1").replace(/(«)\s+/g, "$1\u00A0");
+        if (node.data.trim()) last = node;
+    }
+    if (last) last.data = last.data.replace(/\s+(\S+\s*)$/, "\u00A0$1");
+});
 // Preload images and fonts
 (0, _utils.preloadFonts)("cvn8slu").then(()=>{
     // Remove loader (loading class)

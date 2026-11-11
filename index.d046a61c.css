@@ -1764,3 +1764,27 @@ main {
     text-decoration-color: currentColor;
   }
 }
+
+/* Typographie : pas de mot isolé en fin de paragraphe, titres équilibrés */
+p,
+li,
+blockquote,
+figcaption {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+.text-4xl,
+.text-5xl,
+.text-6xl,
+.text-7xl,
+.text-8xl,
+.md\:text-5xl,
+.md\:text-6xl,
+.lg\:text-5xl,
+.lg\:text-7xl,
+.xl\:text-8xl {
+  text-wrap: balance;
+}
