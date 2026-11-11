@@ -860,9 +860,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-link-hover);
-  outline: none;
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-link-hover);
+    outline: none;
+  }
 }
 
 a:focus {
@@ -907,6 +909,7 @@ main {
 @media screen and (min-width: 1024px) {
   .vh-full-desktop {
     height: 100vh;
+  height: 100dvh;
   }
 }
 
@@ -950,9 +953,11 @@ main {
   left: 0;
 }
 
-.nav-menu-link:hover:after {
-  transform-origin: 0%;
-  transform: scale3d(0, 1, 1);
+@media (hover: hover) {
+  .nav-menu-link:hover:after {
+    transform-origin: 0%;
+    transform: scale3d(0, 1, 1);
+  }
 }
 
 .menu {
@@ -961,6 +966,7 @@ main {
   opacity: 0;
   width: 100%;
   height: 100vh;
+  height: 100dvh;
   counter-reset: menucounter;
   grid-template-columns: auto auto auto;
   place-content: center;
@@ -980,8 +986,10 @@ main {
   right: 1.5rem;
 }
 
-.close:hover {
-  color: var(--color-menu);
+@media (hover: hover) {
+  .close:hover {
+    color: var(--color-menu);
+  }
 }
 
 .ratio-45 {
@@ -1011,22 +1019,28 @@ main {
 
 .nav-mobile {
   min-height: 100vh;
+  min-height: 100dvh;
   background: #292020;
 }
 
 .is-nav-hidden {
   opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity .5s, visibility 0s .5s;
 }
 
 .building-card .building-card__shape {
   opacity: 0;
-  margin-top: 2rem;
-  transition: all .5s cubic-bezier(.19, 1, .22, 1);
+  transform: translateY(2rem);
+  transition: opacity .5s cubic-bezier(.19, 1, .22, 1), transform .5s cubic-bezier(.19, 1, .22, 1);
 }
 
-.building-card:hover .building-card__shape {
-  opacity: 1;
-  margin-top: 0;
+@media (hover: hover) {
+  .building-card:hover .building-card__shape {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .progress-bar {
@@ -1091,20 +1105,28 @@ main {
   background-image: url("12_bat-featured_vijecnica-sarajevo.484fc298.jpg");
 }
 
-.pays-es a:hover {
-  color: var(--color-light-green);
+@media (hover: hover) {
+  .pays-es a:hover {
+    color: var(--color-light-green);
+  }
 }
 
-.pays-fr a:hover {
-  color: var(--color-dark-green);
+@media (hover: hover) {
+  .pays-fr a:hover {
+    color: var(--color-dark-green);
+  }
 }
 
-.pays-tu a:hover {
-  color: var(--color-light-blue);
+@media (hover: hover) {
+  .pays-tu a:hover {
+    color: var(--color-light-blue);
+  }
 }
 
-.pays-al a:hover {
-  color: var(--color-yellow);
+@media (hover: hover) {
+  .pays-al a:hover {
+    color: var(--color-yellow);
+  }
 }
 
 .scroll-ico {
@@ -1146,13 +1168,15 @@ main {
 
 .building-list .building-list__arrow {
   opacity: 0;
-  transition: all .3s cubic-bezier(.19, 1, .22, 1);
+  transition: opacity .3s cubic-bezier(.19, 1, .22, 1), transform .3s cubic-bezier(.19, 1, .22, 1);
   transform: translateX(-16px);
 }
 
-.building-list:hover .building-list__arrow {
-  opacity: 1;
-  transform: translateX(0);
+@media (hover: hover) {
+  .building-list:hover .building-list__arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .text-dark {
@@ -1199,8 +1223,10 @@ main {
   }
 }
 
-.marquee-btn:hover {
-  background-color: var(--color-yellow);
+@media (hover: hover) {
+  .marquee-btn:hover {
+    background-color: var(--color-yellow);
+  }
 }
 
 .marquee-btn span {
@@ -1214,13 +1240,17 @@ main {
   }
 }
 
-.hover\:text-dark:hover {
-  --tw-text-opacity: 1;
-  color: rgb(34 34 34 / var(--tw-text-opacity));
+@media (hover: hover) {
+  .hover\:text-dark:hover {
+    --tw-text-opacity: 1;
+    color: rgb(34 34 34 / var(--tw-text-opacity));
+  }
 }
 
-.hover\:opacity-60:hover {
-  opacity: .6;
+@media (hover: hover) {
+  .hover\:opacity-60:hover {
+    opacity: .6;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1787,4 +1817,44 @@ h3,
 .lg\:text-7xl,
 .xl\:text-8xl {
   text-wrap: balance;
+}
+
+/* Retour immédiat à l'appui (feedback au pointer-down) */
+.marquee-btn,
+.nav-menu-link,
+.close,
+.building-card,
+.toc-link {
+  -webkit-tap-highlight-color: transparent;
+  transition-property: transform, opacity, background-color, color;
+}
+
+.marquee-btn:active,
+.close:active {
+  transform: scale(0.96);
+  transition-duration: 80ms;
+}
+
+.nav-menu-link:active,
+.building-card:active,
+.toc-link:active {
+  opacity: 0.6;
+  transition-duration: 80ms;
+}
+
+/* Tracking : resserré sur les grands corps, neutre sur le texte courant */
+.text-5xl,
+.md\:text-5xl,
+.lg\:text-5xl,
+.xl\:text-5xl,
+.text-6xl,
+.md\:text-6xl,
+.lg\:text-6xl,
+.xl\:text-6xl,
+.lg\:text-7xl,
+.xl\:text-7xl,
+.xl\:text-8xl,
+.\32 xl\:text-8xl,
+.text-9xl {
+  letter-spacing: -0.02em;
 }
