@@ -833,10 +833,8 @@ const scroll = ()=>{
     const transitionContainer = document.querySelector(".page");
     setTimeout(function() {
         transitionContainer.classList.add("is-visible");
-        // Lenis (smooth scrolling)
-        initSmoothScrolling();
-        // GSAP Scroll Triggers
-        scroll();
+        // Recalcule les positions une fois la page visible
+        (0, _scrollTrigger.ScrollTrigger).refresh();
     }, 3000); // Adjust the delay to match your desired timing
     const links = document.querySelectorAll(".nav-link");
     links.forEach(function(link) {
@@ -892,11 +890,14 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "preloadFonts", ()=>preloadFonts);
 const preloadFonts = (id)=>{
     return new Promise((resolve)=>{
+        // Ne jamais bloquer la page : on continue si Typekit échoue ou tarde (>3s)
+        setTimeout(resolve, 3000);
         WebFont.load({
             typekit: {
                 id: id
             },
-            active: resolve
+            active: resolve,
+            inactive: resolve
         });
     });
 };
