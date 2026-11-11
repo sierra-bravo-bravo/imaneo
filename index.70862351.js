@@ -605,7 +605,7 @@ let lenis;
 const initSmoothScrolling = ()=>{
     lenis = new (0, _lenisDefault.default)({
         lerp: 0.2,
-        smooth: true
+        smooth: !window.matchMedia("(prefers-reduced-motion: reduce)").matches
     });
     lenis.on("scroll", ()=>(0, _scrollTrigger.ScrollTrigger).update());
     const scrollFn = (time)=>{

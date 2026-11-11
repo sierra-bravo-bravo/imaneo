@@ -11,15 +11,15 @@
     <meta name="keywords" content="INHA, neo-mauresque, architecture">
     <meta name="author" content="IMANEO">
     <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/zda3gdw.css">
     <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
     <script>document.documentElement.className = "js";
 var supportsCssVars = function() {
     var e, t = document.createElement("style");
     return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
 };
-supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
 
 </script>
 </head>
@@ -223,7 +223,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                         <div class="text-xl" data-fade-in-text="">
                             <div class="p-5 bg-light-green text-dark flex flex-col items-center justify-center gap-3 text-fade">
                                 <span class="uppercase">Podcast [FR]</span>
-                                <audio controls="">
+                                <audio controls="" preload="none">
                                     <source src="https://api.nakala.fr/data/10.34847/nkl.febf9r0s/cdf09411e13ad5050be8de078a5f2a9221c32df8?bearer=">
                                     Your browser does not support the audio element.
                                 </audio>
@@ -240,7 +240,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
                     </div>
                     <div class="text-xl lg:w-4/5 p-5 mt-5 lg:mt-10 bg-light-green text-dark flex flex-col items-center justify-center gap-3 text-fade">
                         <span class="uppercase">Podcast [ES]</span>
-                        <audio controls="">
+                        <audio controls="" preload="none">
                             <source src="https://api.nakala.fr/data/10.34847/nkl.b00fngrl/d16b9d40b964ca37b4b8aa1f3b75b3a2659404e0?bearer=">
                             Your browser does not support the audio element.
                         </audio>
@@ -359,7 +359,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
             <div class="grid grid-cols-12">
                 <div class="ccol-start-1 col-span-12 md:col-start-3 md:col-span-8 flex flex-col gap-y-5">
                     <div class="video" style="background-color: #000">
-                        <iframe title="vimeo-player" src="https://www.canal-u.tv/chaines/invisu/embed/179527" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                        <iframe title="Vidéo – Barrage et centrale hydroélectrique d’El Salto" loading="lazy" src="https://www.canal-u.tv/chaines/invisu/embed/179527" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
                     </div>
                     <div class="mt-5 content__title" data-splitting="" data-effect16="">
                         <p class="text-2xl md:text-4xl">
