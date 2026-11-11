@@ -892,13 +892,17 @@ const preloadFonts = (id)=>{
     return new Promise((resolve)=>{
         // Ne jamais bloquer la page : on continue si Typekit échoue ou tarde (>3s)
         setTimeout(resolve, 3000);
-        WebFont.load({
-            typekit: {
-                id: id
-            },
-            active: resolve,
-            inactive: resolve
+        const typekit = new Promise((done)=>{
+            WebFont.load({
+                typekit: {
+                    id: id
+                },
+                active: done,
+                inactive: done
+            });
         });
+        const inter = document.fonts ? document.fonts.load('400 1em "Inter Tight"').catch(()=>{}) : Promise.resolve();
+        Promise.all([typekit, inter]).then(resolve);
     });
 };
 

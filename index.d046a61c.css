@@ -702,14 +702,6 @@ img, video {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: FontSans;
-  src: url("FontSans-Regular.b7c4ebd6.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --color-text: #f7f4f0;
   --color-bg: #2b2929;
@@ -735,7 +727,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   margin: 0;
-  font-family: FontSans, area-normal, -apple-system, Helvetica, Arial, sans-serif;
+  font-family: "Inter Tight", -apple-system, Helvetica, Arial, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
 }
